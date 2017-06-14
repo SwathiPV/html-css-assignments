@@ -1,0 +1,24 @@
+{
+  "name": "html-css-assignments",
+  "version": "0.1.0",
+  "description": "Learning html-css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwathiPV/html-css-assignments.git"
+  },
+  "author": "Swathi PV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwathiPV/html-css-assignments/issues"
+  },
+  "homepage": "https://github.com/SwathiPV/html-css-assignments#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
