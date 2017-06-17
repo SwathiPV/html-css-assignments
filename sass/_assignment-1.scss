@@ -65,6 +65,33 @@
       color: white;
       margin-top: 70px;
 
+      .user-info {
+        padding-left: 20px;
+        line-height: initial;
+        .initial {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          border-radius: 50%;
+          border: 3px solid white;
+          text-align: center;
+          font-size: 30px;
+          margin: 15px 0;
+        }
+
+        .user-name {
+          font-size: 24px;
+        }
+
+        .org {
+          font-size: 15px;
+        }
+      }
+
+      hr {
+        width: 90%;
+      }
+
       nav {
         a {
           display: block;
