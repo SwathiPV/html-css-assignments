@@ -1,0 +1,65 @@
+.app {
+  height: 100vh;
+
+  .header {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+
+    .appbar {
+      position: fixed;
+      width: 100%;
+      height: 70px;
+
+      .logo {
+        width: 200px;
+        display: inline-block;
+        padding: 5px 5px;
+        float: left;
+        margin-right: 3%;
+      }
+
+      .menu-icon {
+        display: inline-block;
+        width: 5%;
+        height: 70px;
+        float: left;
+        text-align: center;
+      }
+
+      .search-box {
+        position: relative;
+        display: inline-block;
+        float: right;
+        width: 70%;
+        float: left;
+
+        .search-icon {
+          position: absolute;
+          left: 1%;
+          top: 38%;
+          color: #b1bfc6;
+        }
+
+        .search-input {
+          background-color: #ecebeb;
+          width: 40%;
+          border: none;
+          height: 30px;
+          text-indent: 45px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .body {
+    background-color: black;
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+    }
+  }
+}
