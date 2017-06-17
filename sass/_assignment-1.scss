@@ -20,7 +20,6 @@
     line-height: 70px;
     background-color: white;
     border-bottom: 1px solid gray;
-    z-index: 1;
 
     .appbar {
       position: fixed;
@@ -135,6 +134,9 @@
       width: calc(100% - 220px);
       float: right;
       background-color: #eee;
+      height: calc(100vh - 70px);
+      overflow: auto;
+
 
       .reports-header {
         width: 98%;
