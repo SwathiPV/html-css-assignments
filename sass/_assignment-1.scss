@@ -60,6 +60,32 @@
     .sidebar {
       height: 100vh;
       position: fixed;
+      background-color: #2f3b4f;
+      width: 220px;
+      color: white;
+      margin-top: 70px;
+
+      nav {
+        a {
+          display: block;
+          color: white;
+          height: 55px;
+          line-height: 55px;
+
+          &.organization-name {
+            padding: 0 20px;
+
+            i {
+              padding:0 0 0 20px !important;
+              margin-left: 58px;
+            }
+          }
+
+          i {
+            padding: 0 20px;
+          }
+        }
+      }
     }
   }
 }
