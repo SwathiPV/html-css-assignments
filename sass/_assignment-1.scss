@@ -1,6 +1,19 @@
 .app {
   height: 100vh;
 
+  .btn, .btn-flat {
+    border: none;
+    padding: 12px;
+    color: black;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .btn-flat {
+    background-color: transparent !important;
+  }
+
   .header {
     position: relative;
     height: 70px;
@@ -150,6 +163,7 @@
           .report-details  {
             padding: 2% 2%;
             width: 46%;
+            display: inline-block;
 
             h3 {
               display: inline-block;
@@ -162,22 +176,72 @@
               display: block;
             }
 
+            img {
+              width: 135px;
+              display: block;
+              margin: auto;
+            }
+
             button {
               float: right;
               background-color: #6d4c41;
               border: none;
-              padding: 12px;
               color: white;
-              border-radius: 3px;
-              text-transform: uppercase;
-              font-weight: bold;
             }
           }
 
-          img {
-            width: 135px;
-            display: block;
-            margin: auto;
+          .subscriber-details {
+            padding: 2% 2%;
+            width: 46%;
+            display: inline-block;
+            float: right;
+
+            .no-of-subscribers {
+              color: #ff8862;
+            }
+
+            .subscribers-input {
+              position: relative;
+              margin-top: 30%;
+              color: gray;
+
+              label {
+                position: absolute;
+                top: -60px;
+
+                &.active {
+                  color: #1666c0;
+                }
+              }
+
+              input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+
+                &:focus {
+                  border-bottom: 1px solid #1666c0;
+                }
+              }
+            }
+
+            .action-buttons {
+              margin-top: 5%;
+
+              button {
+                color: #025896;
+                background-color: #3f51b5;
+
+                &.white {
+                  color: white !important;
+                }
+
+                &.add {
+                  float: right;
+                }
+              }
+            }
           }
         }
       }
