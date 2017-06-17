@@ -70,7 +70,6 @@
   }
 
   .body {
-    background-color: black;
     .sidebar {
       height: 100vh;
       position: fixed;
@@ -136,7 +135,6 @@
       width: calc(100% - 220px);
       float: right;
       background-color: #eee;
-      height: calc(100vh - 71px);
 
       .reports-header {
         width: 98%;
@@ -198,6 +196,7 @@
 
             .no-of-subscribers {
               color: #ff8862;
+              float: right;
             }
 
             .subscribers-input {
