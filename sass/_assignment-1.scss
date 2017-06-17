@@ -7,6 +7,7 @@
     line-height: 70px;
     background-color: white;
     border-bottom: 1px solid gray;
+    z-index: 1;
 
     .appbar {
       position: fixed;
@@ -63,7 +64,6 @@
       background-color: #2f3b4f;
       width: 220px;
       color: white;
-      margin-top: 70px;
 
       .user-info {
         padding-left: 20px;
@@ -116,6 +116,29 @@
             background-color: black;
             border-left: 3px solid white;
           }
+        }
+      }
+    }
+    .content {
+      width: calc(100% - 220px);
+      float: right;
+      background-color: #eee;
+      height: calc(100vh - 71px);
+
+      .reports-header {
+        width: 99%;
+        height: 50px;
+        background-color: white;
+        line-height: 50px;
+        margin: 1%;
+
+        i {
+          padding: 1% 1% 1% 2%;
+          font-size: 20px;
+        }
+
+        .archived-reports {
+          color: blue;
         }
       }
     }
