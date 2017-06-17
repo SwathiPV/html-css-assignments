@@ -111,6 +111,11 @@
           i {
             padding: 0 20px;
           }
+
+          &.active {
+            background-color: black;
+            border-left: 3px solid white;
+          }
         }
       }
     }
