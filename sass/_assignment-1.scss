@@ -13,6 +13,10 @@
     font-weight: bold;
   }
 
+  .btn {
+    box-shadow: 0 5px 5px -5px gray;
+  }
+
   .btn-flat {
     background-color: transparent !important;
   }
@@ -22,7 +26,7 @@
     height: 70px;
     line-height: 70px;
     background-color: white;
-    border-bottom: 1px solid gray;
+    box-shadow: 0 1px 5px gray;
 
     .appbar {
       position: fixed;
