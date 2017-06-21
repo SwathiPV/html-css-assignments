@@ -2,12 +2,124 @@
 <html>
   <head>
     <title>Assignment - 1</title>
-    <link type='text/css' rel='stylesheet' href='./css/main.css' />
+    <link type='text/css' rel='stylesheet' href='../css/main.css' />
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-    <div class='maincontainer'>
-      <h1> Assignment 1!</h1>
-      <h2> Yet to start...... </h2>
+    <div class='app'>
+      <div class='header'>
+        <div class='appbar'>
+          <img class='logo' src='../img/logo.png' />
+          <div class='menu-icon'>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div class='search-box'>
+            <i class="fa fa-search search-icon" aria-hidden="true"></i>
+            <input class='search-input' type='text' placeholder="Lookup Report"/>
+          </div>
+        </div>
+      </div>
+      <div class='body'>
+        <div class='sidebar'>
+          <div class='user-info'>
+            <div class='initial'>J</div>
+            <span class='user-name'>John snow</span><br />
+            <span class='org'>Acme corp</span>
+          </div>
+          <hr size='1' />
+          <nav>
+            <a href='' class='organization-name'>
+              Acme Corp
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </a>
+            <a href=''>
+              <i class="fa fa-briefcase" aria-hidden="true"></i>Organization Info
+            </a>
+            <a href=''>
+              <i class="fa fa-tags" aria-hidden="true"></i>Tags
+            </a>
+            <a href=''>
+              <i class="fa fa-cube" aria-hidden="true"></i>Aggregation units
+            </a>
+            <a href='' class='active'>
+              <i class="fa fa-file" aria-hidden="true"></i>Reports
+            </a>
+            <a class='logout' href=''>
+              <i class="fa fa-power-off" aria-hidden="true"></i>Logout
+            </a>
+          </nav>
+        </div>
+        <div class='content'>
+          <div class='reports-header'>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            Acme corp has 8 reports and <span class='archived-reports'><u>2 archived reports</u></span>
+          </div>
+          <div class='reports'>
+            <div class='report'>
+              <div class='report-details'>
+                <h3>Report 1</h3>
+                <button class='btn'> Archive report</button>
+                <span class='next-report-date'><i class="fa fa-clock-o" aria-hidden="true"></i> Next report on 5th April</span><br />
+                <img src='../img/userReport.png' />
+              </div>
+              <div class='subscriber-details'>
+                <button class='btn-flat no-of-subscribers'> 10 Subscribers </button>
+                <div class='subscribers-input'>
+                  <label class='active'>Add members to email subscription list</label>
+                  <input type='text' />
+                  <div class='chips'>
+                    <span class='chip'>Jhon Deo <i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                    <span class='chip'>T Stark <i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                    <span class='chip'>Jhon Snow <i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class='action-buttons'>
+                  <button class='btn-flat'>or add other subscribers</button>
+                  <button class='btn white add'><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                </div>
+              </div>
+            </div>
+            <div class='report'>
+              <div class='report-details'>
+                <h3>Report 2</h3>
+                <button class='btn'> Archive report</button>
+                <span class='next-report-date'><i class="fa fa-clock-o" aria-hidden="true"></i> Next report on 5th May</span><br />
+                <img src='../img/tag.png' />
+              </div>
+              <div class='subscriber-details'>
+                <button class='btn-flat no-of-subscribers'> 1 Subscribers </button>
+                <div class='subscribers-input'>
+                  <input type='text' />
+                  <label>Add members to email subscription list</label>
+                </div>
+                <div class='action-buttons'>
+                  <button class='btn-flat'>or add other subscribers</button>
+                  <button class='btn white add'><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                </div>
+              </div>
+            </div>
+            <div class='report'>
+              <div class='report-details'>
+                <h3>Report 3</h3>
+                <button class='btn'> Archive report</button>
+                <span class='next-report-date'><i class="fa fa-clock-o" aria-hidden="true"></i> Next report on 6th July</span><br />
+                <img src='../img/tag.png' />
+              </div>
+              <div class='subscriber-details'>
+                <button class='btn-flat no-of-subscribers'> 13 Subscribers </button>
+                <div class='subscribers-input'>
+                  <input type='text' />
+                  <label>Add members to email subscription list</label>
+                </div>
+                <div class='action-buttons'>
+                  <button class='btn-flat'>or add other subscribers</button>
+                  <button class='btn white add'><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

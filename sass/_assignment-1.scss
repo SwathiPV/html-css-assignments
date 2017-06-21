@@ -1,0 +1,289 @@
+.app {
+  height: 100vh;
+
+  button {
+    cursor: pointer;
+  }
+  .btn, .btn-flat {
+    border: none;
+    padding: 12px;
+    color: black;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .btn {
+    box-shadow: 0 5px 5px -5px gray;
+  }
+
+  .btn-flat {
+    background-color: transparent !important;
+  }
+
+  .header {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+    box-shadow: 0 1px 5px gray;
+
+    .appbar {
+      position: fixed;
+      width: 100%;
+
+      .logo {
+        width: 200px;
+        display: inline-block;
+        padding: 5px 5px;
+        float: left;
+        margin-right: 3%;
+      }
+
+      .menu-icon {
+        display: inline-block;
+        width: 5%;
+        height: 70px;
+        float: left;
+        text-align: center;
+      }
+
+      .search-box {
+        position: relative;
+        display: inline-block;
+        float: right;
+        width: 70%;
+        float: left;
+
+        .search-icon {
+          position: absolute;
+          left: 1%;
+          top: 38%;
+          color: #b1bfc6;
+        }
+
+        .search-input {
+          background-color: #ecebeb;
+          width: 60%;
+          border: none;
+          height: 30px;
+          text-indent: 45px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .body {
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+      background-color: #2f3b4f;
+      width: 220px;
+      color: white;
+
+      .user-info {
+        padding-left: 20px;
+        .initial {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          border-radius: 50%;
+          border: 3px solid white;
+          text-align: center;
+          font-size: 30px;
+          margin: 15px 0;
+        }
+
+        .user-name {
+          font-size: 24px;
+        }
+
+        .org {
+          font-size: 15px;
+        }
+      }
+
+      hr {
+        width: 90%;
+      }
+
+      nav {
+        position: relative;
+        height: calc(100vh - 210px);
+        a {
+          display: block;
+          color: white;
+          height: 55px;
+          line-height: 55px;
+
+          &.organization-name {
+            padding: 0 20px;
+
+            i {
+              padding:0 0 0 20px !important;
+              margin-left: 58px;
+            }
+          }
+
+          i {
+            padding: 0 20px;
+          }
+
+          &.active {
+            background-color: black;
+            border-left: 3px solid white;
+          }
+
+          &.logout {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #2a3344;
+          }
+        }
+      }
+    }
+    .content {
+      width: calc(100% - 220px);
+      float: right;
+      background-color: #eee;
+      height: calc(100vh - 70px);
+      overflow: auto;
+
+
+      .reports-header {
+        width: 98%;
+        height: 50px;
+        background-color: white;
+        line-height: 50px;
+        margin: 1%;
+
+        i {
+          padding: 1% 1% 1% 2%;
+          font-size: 20px;
+        }
+
+        .archived-reports {
+          color: blue;
+          cursor: pointer;
+        }
+      }
+
+      .reports {
+        .report {
+          background-color: white;
+          margin: 1%;
+
+          .report-details  {
+            padding: 2% 2%;
+            width: 46%;
+            display: inline-block;
+
+            h3 {
+              display: inline-block;
+            }
+
+            .next-report-date {
+              color: blue;
+              font-size: 15px;
+              padding: 1% 0;
+              display: block;
+            }
+
+            img {
+              width: 135px;
+              display: block;
+              margin: auto;
+            }
+
+            button {
+              float: right;
+              background-color: #6d4c41;
+              border: none;
+              color: white;
+            }
+          }
+
+          .subscriber-details {
+            padding: 2% 2%;
+            width: 46%;
+            display: inline-block;
+            float: right;
+
+            .no-of-subscribers {
+              color: #ff8862;
+              float: right;
+            }
+
+            .subscribers-input {
+              position: relative;
+              margin-top: 30%;
+              color: gray;
+
+              label {
+                position: absolute;
+                top: -65px;
+
+                &.active {
+                  color: #1666c0;
+                }
+              }
+
+              input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+
+                &:focus {
+                  border-bottom: 1px solid #1666c0;
+                }
+              }
+
+              .chips {
+                position: absolute;
+                top: -28px;
+                width: 100%;
+
+                .chip {
+                  display: inline-block;
+                  height: 32px;
+                  line-height: 32px;
+                  margin-right: 5px;
+                  padding: 0 0 0 20px;
+                  background-color: #bdbdbd;
+                  color: black;
+                  border-radius: 18px;
+                }
+
+                i {
+                  padding: 7px 10px;
+                  font-size: 18px;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            .action-buttons {
+              margin-top: 5%;
+
+              button {
+                color: #025896;
+                background-color: #3f51b5;
+
+                &.white {
+                  color: white !important;
+                }
+
+                &.add {
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
