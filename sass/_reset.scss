@@ -8,7 +8,7 @@ html {
  * Remove default margin.
  */
 
-body {
+body, ul {
   margin: 0;
 }
 
@@ -414,6 +414,7 @@ table {
 }
 
 td,
-th {
+th,
+ul {
   padding: 0;
 }
