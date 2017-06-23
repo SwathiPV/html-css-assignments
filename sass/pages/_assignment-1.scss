@@ -111,12 +111,9 @@
       nav {
         position: relative;
         height: calc(100vh - 210px);
-        a {
-          display: block;
-          color: white;
-          height: 55px;
-          line-height: 55px;
-          text-decoration: none !important;
+        li {
+          height: 50px;
+          line-height: 50px;
 
           &.organization-name {
             padding: 0 20px;
