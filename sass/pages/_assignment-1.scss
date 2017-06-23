@@ -168,11 +168,17 @@
         .report {
           background-color: white;
           margin: 1%;
+          &::after {
+            content: '';
+            clear: both;
+            display: block;
+          }
 
           .report-details  {
             padding: 2% 2%;
             width: 46%;
             display: inline-block;
+            float: left;
 
             h3 {
               display: inline-block;
@@ -203,7 +209,7 @@
             padding: 2% 2%;
             width: 46%;
             display: inline-block;
-            float: right;
+            float: left;
 
             .no-of-subscribers {
               color: #ff8862;
