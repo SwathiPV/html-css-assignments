@@ -160,8 +160,7 @@
         margin: 8px;
 
         i {
-          padding-left: 2%;
-          padding-right: 1%;
+          padding: 0 18px;
           font-size: 20px;
         }
       }
@@ -170,7 +169,8 @@
         .report {
           background-color: white;
           margin: 8px;
-          padding: 2%;
+          padding: 18px;
+
           &::after {
             content: '';
             clear: both;
