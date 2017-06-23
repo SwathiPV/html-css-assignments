@@ -37,15 +37,15 @@
         display: inline-block;
         padding: 5px 5px;
         float: left;
-        margin-right: 3%;
+        margin-right: 18px;
       }
 
       .menu-icon {
         display: inline-block;
-        width: 5%;
         height: 70px;
         float: left;
         text-align: center;
+        padding: 0 15px;
       }
 
       .search-box {
@@ -149,17 +149,19 @@
       width: calc(100% - 220px);
       float: right;
       background-color: #eee;
+      padding: 2px;
 
 
       .reports-header {
-        width: 98%;
+        width: calc(100% - 16px);
         height: 50px;
         background-color: white;
         line-height: 50px;
-        margin: 1%;
+        margin: 8px;
 
         i {
-          padding: 1% 1% 1% 2%;
+          padding-left: 2%;
+          padding-right: 1%;
           font-size: 20px;
         }
       }
@@ -167,7 +169,8 @@
       .reports {
         .report {
           background-color: white;
-          margin: 1%;
+          margin: 8px;
+          padding: 2%;
           &::after {
             content: '';
             clear: both;
@@ -175,8 +178,7 @@
           }
 
           .report-details  {
-            padding: 2% 2%;
-            width: 46%;
+            width: 50%;
             display: inline-block;
             float: left;
 
@@ -206,8 +208,7 @@
           }
 
           .subscriber-details {
-            padding: 2% 2%;
-            width: 46%;
+            width: 50%;
             display: inline-block;
             float: left;
 
