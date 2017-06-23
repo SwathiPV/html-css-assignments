@@ -25,11 +25,11 @@
     position: relative;
     height: 70px;
     line-height: 70px;
-    background-color: white;
     box-shadow: 0 1px 5px gray;
 
     .appbar {
       position: fixed;
+      background-color: white;
       width: 100%;
 
       .logo {
@@ -149,8 +149,6 @@
       width: calc(100% - 220px);
       float: right;
       background-color: #eee;
-      height: calc(100vh - 70px);
-      overflow: auto;
 
 
       .reports-header {
