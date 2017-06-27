@@ -1,0 +1,42 @@
+.app2 {
+
+  .header {
+    height: 70px;
+    position: relative;
+
+    .appbar {
+      height: inherit;
+      width: 100%;
+      position: fixed;
+      background-color: #3c8dbc;
+
+      .logo {
+        width: 200px;
+      }
+    }
+  }
+
+  .sidebar {
+    width: 200px;
+    background-color: #222d31;
+    color: white;
+
+    .user-info {
+      height: 50px;
+      padding: 10px;
+
+      .profile-image {
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+      }
+      h3 {
+        display: inline-block;
+      }
+      .online-status {
+        font-size: 12px;
+      }
+    }
+
+  }
+}
