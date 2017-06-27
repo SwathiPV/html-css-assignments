@@ -221,7 +221,7 @@ button {
               }
             }
 
-            input:focus+label {
+            input:focus+label, .chips ~ label {
               color: #1666c0;
               top: -60px !important;
               transition: top 0.5s !important;
@@ -241,6 +241,7 @@ button {
                 background-color: #bdbdbd;
                 color: black;
                 border-radius: 18px;
+                margin-top: 5px;
               }
 
               i {
