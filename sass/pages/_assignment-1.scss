@@ -37,31 +37,22 @@ button {
       margin-right: 18px;
     }
 
-    .menu-icon {
-      display: inline-block;
-      height: 70px;
-      float: left;
-      text-align: center;
-      padding: 0 15px;
-    }
-
     .search-box {
       position: relative;
       display: inline-block;
       float: right;
-      width: 70%;
       float: left;
 
       .search-icon {
         position: absolute;
-        left: 1%;
+        left: 13px;
         top: 38%;
         color: #b1bfc6;
       }
 
       .search-input {
         background-color: #ecebeb;
-        width: 60%;
+        width: 30em;
         border: none;
         height: 30px;
         text-indent: 45px;
