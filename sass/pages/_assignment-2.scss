@@ -37,19 +37,22 @@
         font-size: 12px;
       }
     }
+    .separator {
+      background-color: #1a2225;
+      color: gray;
+    }
+    li, .separator {
+      padding-left: 10px;
+      line-height: 40px;
 
-    nav {
-      ul {
-        padding-left: 10px;
-      li {
-        line-height: 50px;
-
-        i {
-          margin-right: 10px;
-        }
+      i {
+        margin-right: 10px;
       }
     }
-  }
-
+    .labels {
+      i {
+        font-weight: bold;
+      }
+    }
   }
 }
