@@ -1,0 +1,453 @@
+.app2 {
+  // ### Start: Common stylings for this page //
+  .title-bar-buttons {
+    float: right;
+     i {
+       padding: 0 10px;
+       cursor: pointer;
+     }
+  }
+
+  progress.bg-skyblue::-webkit-progress-value {
+    background-color: #01bfef;
+  }
+  progress.bg-red::-webkit-progress-value {
+    background-color: red;
+  }
+  progress.bg-green::-webkit-progress-value {
+    background-color: green;
+  }
+  progress.bg-orange::-webkit-progress-value {
+    background-color: orange;
+  }
+  progress.bg-white::-webkit-progress-value {
+    background-color: white;
+  }
+  // ### End: Common stylings for this page //
+
+  .header {
+    height: 70px;
+    position: relative;
+
+    .appbar {
+      height: 70px;
+      line-height: 70px;
+      width: 100%;
+      position: fixed;
+      background-color: #3c8dbc;
+      box-shadow: 0 1px 5px gray;
+      color: white;
+      z-index: 1;
+
+      .logo {
+        width: 200px;
+        margin: 15px;
+      }
+
+      .hamburger {
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .fa-ellipsis-v {
+        margin-top: 30px;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+      ul li {
+        display: inline-block;
+        padding: 0 12px;
+        cursor: pointer;
+
+        i {
+          font-weight: bold;
+        }
+        sup {
+          top: -0.8em;
+          left: -10px;
+        }
+        .profile-image {
+          width: 30px;
+          height: 30px;
+          margin-bottom: -10px;
+          margin-right: 5px;
+
+          &+span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    width: 220px;
+    background-color: #222d31;
+    color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+    .user-info {
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 15px;
+
+      .profile-image {
+        margin-right: 10px;
+      }
+      .online-status {
+        font-size: 12px;
+      }
+    }
+
+    .search {
+      text-align: center;
+      margin: 10px 0;
+      position: relative;
+
+      .search-input {
+        height: 30px;
+        border-radius: 4px;
+        background-color: #374850;
+        text-indent: 15px;
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 25px;
+        top: 7px;
+        color: gray;
+      }
+    }
+
+    .separator {
+      background-color: #1a2225;
+      color: gray;
+    }
+    ul > li, .separator {
+      padding-left: 10px;
+      line-height: 40px;
+      cursor: pointer;
+
+      i {
+        margin-right: 10px;
+      }
+
+      .badge {
+        font-size: 12px;
+      }
+    }
+    .fa-angle-left {
+      float: right;
+      margin-top: 10px;
+    }
+    .labels {
+      i {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .container {
+    width: calc(100% - 240px);
+    background-color: #eceff4;
+    padding: 10px;
+    margin-left: 220px;
+  }
+
+  .dashboard-title {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 5px 0;
+    padding-right: 10px;
+    h3, ol, li {
+      display: inline-block;
+    }
+
+    .version {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .break-crumbs {
+      font-size: 12px;
+      color: gray;
+
+      li {
+        padding: 0 5px;
+
+        &:not(:first-child):before {
+          content: '\003e';
+        }
+        &.active {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .summary-section {
+    overflow: hidden;
+    margin-bottom: 15px;
+
+    div {
+      display: inline-block;
+      float: left;
+    }
+    .summary {
+      display: inline-block;
+      float: left;
+      width: 23%;
+      height: 100px;
+      &:not(:last-child) {
+        margin-right: 2.5%;
+      }
+      .icon {
+        width: 30%;
+        color: white;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+
+        i {
+          font-size: 2em;
+        }
+      }
+
+      .content {
+        background-color: white;
+        width: calc(70% - 10px);
+        height: calc(100% - 10px);
+        padding: 10px 0 0 10px;
+
+        h4 {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .recap-report {
+    background-color: white;
+    border-top: 2px solid gray;
+
+    .recap-report-header {
+      color: gray;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid lightgray;
+      padding-left: 10px;
+    }
+    .charts {
+      width: calc(100% - 40px);
+      padding: 10px 20px 20px 20px;
+      border-bottom: 1px solid lightgray;
+
+      img {
+        display: inline-block;
+        float: left;
+        width: 60%;
+        height: 206px;
+      }
+
+      .goals {
+        width: calc(40% - 2em);
+        margin-left: 2em;
+
+        h3 {
+          text-align: center;
+        }
+
+        .goal {
+          margin-top: 10px;
+          label {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            width: 100%;
+
+            .score {
+              float: right;
+            }
+          }
+
+          progress {
+            height: 10px;
+            width: 100%;
+          }
+          progress[value]::-webkit-progress-bar {
+            background-color: lightgray;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    .totals-section {
+      overflow: hidden;
+      background-color: white;
+      .total {
+        display: inline-block;
+        float: left;
+        width: calc(25% - 1px);
+        text-align: center;
+        background-color: white;
+        line-height: 20px;
+        margin: 30px 0;
+
+        &:not(:last-child) {
+          border-right: 1px solid gray;
+        }
+      }
+    }
+  }
+
+  .statistics {
+    margin-top: 20px;
+
+    .visitors-report {
+      width: 60%;
+      background-color: white;
+      border-top: 2px solid green;
+
+      .visitors-report-header {
+        color: gray;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid lightgray;
+        padding-left: 10px;
+      }
+
+      .map {
+        width: 75%;
+        height: 350px;
+      }
+
+      .map-charts {
+        color: white;
+        height: 350px;
+        text-align: center;
+        width: 25%;
+
+        h4 {
+          font-weight: bold;
+        }
+
+        .chart {
+          height: calc(33% - 10px);
+          padding-top: 10px;
+          vertical-align: middle;
+        }
+
+        .bar-chart {
+          height: 50px;
+          width: 56px;
+          display: inline-block;
+          border-bottom: 1px solid white;
+          position: relative;
+          margin-bottom: 10px;
+
+          span {
+            width: 5px;
+            margin:0 2px;
+            color: white;
+            display: inline-block;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+
+            &:first-child {
+              left: 0;
+              height: 20px;
+            }
+
+            &:nth-child(2) {
+              left: 8px;
+              height: 2px;
+            }
+            &:nth-child(3) {
+              left: 16px;
+              height: 12px;
+            }
+            &:nth-child(4) {
+              left: 24px;
+              height: 8px;
+            }
+            &:nth-child(5) {
+              left: 32px;
+              height: 34px;
+            }
+            &:nth-child(6) {
+              left: 40px;
+              height: 6px;
+            }
+            &:nth-child(7) {
+              left: 48px;
+              height: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .analysis {
+    margin-left: 2em;
+    width: calc(40% - 2em);
+
+    .data-section {
+      height: calc(392px / 4 - 10px );
+      width: 100%;
+      border-radius: 2px;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+
+      .icon {
+        width: 30%;
+        height: 100%;
+        line-height: calc(392px / 4);
+        display: inline-block;
+        float: left;
+        text-align: center;
+        color: white;
+        i {
+          font-size: 26px;
+        }
+      }
+
+      .details {
+        width: 70%;
+        height: 100%;
+        display: inline-block;
+        text-align: left;
+        color: white;
+
+        progress {
+          height: 2px;
+          width: 100%;
+        }
+        progress[value]::-webkit-progress-bar {
+          background-color: lightgray;
+          border-radius: 2px;
+        }
+
+        .title, .value, .description {
+          padding-left: 10px;
+        }
+        .title {
+          padding-top: 6px;
+          font-size: 14px;
+        }
+        .value {
+          font-weight: bold;
+        }
+
+        .description {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

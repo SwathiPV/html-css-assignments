@@ -2,13 +2,325 @@
 <html>
   <head>
     <title>Assignment - 2</title>
-    <link type='text/css' rel='stylesheet' href='./css/main.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0' />
+    <link type='text/css' rel='stylesheet' href='../css/main.css' />
     <link rel='icon' href='../img/favicon.ico' />
   </head>
-  <body>
-    <div class='maincontainer'>
-      <h1> Assignment 2!</h1>
-      <h2> Yet to start...... </h2>
+  <body class='app2'>
+    <div class='header'>
+      <div class='appbar'>
+        <img class='logo left' src='../img/logo-2.png' />
+        <i class="fa fa-bars hamburger left" aria-hidden="true"></i>
+        <i class="fa fa-ellipsis-v right" aria-hidden="true"></i>
+        <ul class='header-menu inline-block right'>
+          <li>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <sup><span class='badge bg-blue'>4</span></sup>
+          </li>
+          <li>
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <sup><span class='badge bg-orange'>10</span></sup>
+          </li>
+          <li>
+            <i class="fa fa-flag-o" aria-hidden="true"></i>
+            <sup><span class='badge bg-red'>9</span></sup>
+          </li>
+          <li>
+            <img class='profile-image circle' src='../img/profile-pic.jpg' />
+            <span>Swathi PV</span>
+          </li>
+          <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+      </div>
     </div>
+    <div>
+      <div class='sidebar inline-block left'>
+        <div class='user-info'>
+          <img class='profile-image circle inline-block left' src='../img/profile-pic.jpg' />
+          <div class='name-section'>
+            <h3>Swathi PV</h3>
+            <span class='online-status'><i class="fa fa-circle green-text" aria-hidden="true"></i> Online</span>
+          </div>
+        </div>
+        <div class='search'>
+          <input class='search-input' placeholder="Search..."/>
+          <i class="fa fa-search search-icon" aria-hidden="true"></i>
+        </div>
+        <div class='navigation'>
+          <div class='separator'>Main navigation</div>
+          <nav>
+            <ul>
+              <li>
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                Dashboard
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-files-o" aria-hidden="true"></i>
+                Layout options
+                <span class='badge bg-blue'>4</span>
+              </li>
+              <li>
+                <i class="fa fa-th" aria-hidden="true"></i>
+                Widgets
+                <span class='badge bg-green'>new</span>
+              </li>
+              <li>
+                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                Charts
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                UI Elements
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                Forms
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-table" aria-hidden="true"></i>
+                Tables
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                Calender
+                <span class='badge bg-red'>3</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                Mailbox
+                <span class='badge bg-orange'>12</span>
+              </li>
+              <li>
+                <i class="fa fa-folder" aria-hidden="true"></i>
+                Examples
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-level-up" aria-hidden="true"></i>
+                Multilevel
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                Documentation
+              </li>
+            </ul>
+          </nav>
+
+          <div class='separator'>
+            Labels
+          </div>
+          <ul class='labels'>
+            <li>
+              <i class="fa fa-circle-thin red-text" aria-hidden="true"></i>
+              Important
+            </li>
+            <li>
+              <i class="fa fa-circle-thin orange-text" aria-hidden="true"></i>
+              Warning
+            </li>
+            <li>
+              <i class="fa fa-circle-thin light-blue-text" aria-hidden="true"></i>
+              Information
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='container inline-block'>
+        <div class='dashboard-title'>
+          <h3>Dashboard</h3>
+          <span class='version'>Version 2.0</span>
+          <ol class='break-crumbs right'>
+            <li class='active'> <i class="fa fa-tachometer" aria-hidden="true"></i> Home </li>
+            <li> Dashboard </li>
+        </div>
+        <div class='summary-section'>
+          <div class='summary traffic'>
+            <div class='icon bg-skyblue'><i class="fa fa-cog" aria-hidden="true"></i></div>
+            <div class='content'>
+              <h4 class='uppercase truncate'> CPU Traffic</h4>
+              <strong>40%</strong>
+            </div>
+          </div>
+          <div class='summary likes'>
+            <div class='icon bg-dark-red'><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+            <div class='content'>
+              <h4 class='uppercase truncate'>Likes</h4>
+              <strong>41,410</strong>
+            </div>
+          </div>
+          <div class='summary sales'>
+            <div class='icon bg-green'><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+            <div class='content'>
+              <h4 class='uppercase truncate'>Sales</h4>
+              <strong>760</strong>
+            </div>
+          </div>
+          <div class='summary new-members'>
+            <div class='icon bg-orange'><i class="fa fa-users" aria-hidden="true"></i></div>
+            <div class='content'>
+              <h4 class='uppercase truncate'>New members</h4>
+              <strong>2,000</strong>
+            </div>
+          </div>
+        </div>
+        <div class='recap-report'>
+          <div class='recap-report-header'>
+            <span>Monthly Recap Report</span>
+            <span class='title-bar-buttons'>
+              <i class="fa fa-minus" aria-hidden="true"></i>
+              <i class="fa fa-wrench" aria-hidden="true"></i>
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class='charts'>
+            <img src='../img/charts.png' />
+            <div class='goals inline-block'>
+              <h3>Goal completion</h3>
+              <div class='goal'>
+                <label>Add products to cart <span class='score'>160/200</span></label>
+                <progress value="160" max="200" class='bg-skyblue'></progress>
+              </div>
+              <div class='goal'>
+                <label>Complete purchase <span class='score'>310/400</span></label>
+                <progress value="310" max="400" class='bg-red'></progress>
+              </div>
+              <div class='goal'>
+                <label>Visit premium page <span class='score'>480/800</span></label>
+                <progress value="480" max="800" class='bg-green'></progress>
+              </div>
+              <div class='goal'>
+                <label>Send inqueries <span class='score'>250/500</span></label>
+                <progress value="250" max="500" class='bg-orange'></progress>
+              </div>
+            </div>
+          </div>
+          <div class='totals-section'>
+            <div class='total'>
+              <h5 class='red-text'><i class="fa fa-caret-up" aria-hidden="true"></i> 17%</h5>
+              <strong>$35,210.80</strong>
+              <h4 class='uppercase'>Total revenue</h4>
+            </div>
+            <div  class='total'>
+              <h5 class='orange-text'><i class="fa fa-caret-left" aria-hidden="true"></i> 0%</h5>
+              <strong>$15,810</strong>
+              <h4 class='uppercase'>Total cost</h4>
+            </div>
+            <div  class='total'>
+              <h5 class='light-blue-text'><i class="fa fa-caret-up" aria-hidden="true"></i> 20%</h5>
+              <strong>$30,019.09</strong>
+              <h4 class='uppercase'>Total profit</h4>
+            </div>
+            <div  class='total'>
+              <h5 class='red-text'><i class="fa fa-caret-down" aria-hidden="true"></i> 18%</h5>
+              <strong>1200</strong>
+              <h4 class='uppercase'>Goal completion</h4>
+            </div>
+          </div>
+        </div>
+        <div class='statistics'>
+          <div class='visitors-report inline-block left'>
+            <div class='visitors-report-header'>
+              <span> Visitors report</span>
+              <span class='title-bar-buttons'>
+                <i class="fa fa-minus" aria-hidden="true"></i>
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+            <img class='map inline-block left' src='../img/map.png' />
+            <div class='map-charts bg-green inline-block'>
+              <div class='visits chart'>
+                <div class='bar-chart'>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                </div>
+                <h4>8390</h4>
+                <span class='uppercase'>Visits</span>
+              </div>
+              <div class='referals chart'>
+                <div class='bar-chart'>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                </div>
+                <h4>30%</h4>
+                <span class='uppercase'>Referals</span>
+              </div>
+              <div class='organic chart'>
+                <div class='bar-chart'>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                  <span class='bar'></span>
+                </div>
+                <h4>70%</h4>
+                <span class='uppercase'>Organic</span>
+              </div>
+            </div>
+          </div>
+          <div class='analysis inline-block'>
+            <div class='data-section'>
+              <div class='icon bg-dark-orange'>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              </div>
+              <div class='details bg-orange'>
+                <h3 class='title uppercase'>Inventory</h3>
+                <span class='value'>12,345</span>
+                <progress value="160" max="200" class='bg-white'></progress>
+                <span class='description truncate'>50% increased in last 30 days</span>
+              </div>
+            </div>
+            <div class='data-section'>
+              <div class='icon bg-dark-green'>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div class='details bg-green'>
+                <h3 class='title uppercase'>Mentions</h3>
+                <span class='value'>9,250</span>
+                <progress class='bg-white' value='50' max='100'></progress>
+                <span class='description truncate'>20% increased in last 30 days</span>
+              </div>
+            </div>
+            <div class='data-section'>
+              <div class='icon bg-dark-red'>
+                <i class="fa fa-cloud-download" aria-hidden="true"></i>
+              </div>
+              <div class='details bg-red'>
+                <h3 class='title uppercase'>Downloads</h3>
+                <span class='value'>24,156</span>
+                <progress class='bg-white' value='50' max='100'></progress>
+                <span class='description truncate'>70% increased in last 30 days</span>
+              </div>
+            </div>
+            <div class='data-section'>
+              <div class='icon bg-dark-skyblue'>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+              </div>
+              <div class='details bg-skyblue'>
+                <h3 class='title uppercase'>Direct messages</h3>
+                <span class='value'>11,000</span>
+                <progress class='bg-white' value='50' max='100'></progress>
+                <span class='description truncate'>40% increased in last 30 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
