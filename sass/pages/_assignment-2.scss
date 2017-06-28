@@ -34,16 +34,22 @@
       position: fixed;
       background-color: #3c8dbc;
       box-shadow: 0 1px 5px gray;
+      color: white;
 
       .logo {
         width: 200px;
         margin: 15px;
+        float: left;
       }
 
+      .hamburger {
+        float: left;
+        margin-top: 30px;
+      }
       ul {
         display: inline-block;
         float: right;
-        color: white;
+
         li {
           display: inline-block;
           padding: 0 12px;
