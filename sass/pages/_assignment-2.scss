@@ -1,5 +1,12 @@
 .app2 {
 
+  .title-bar-buttons {
+    float: right;
+     i {
+       padding: 0 10px;
+     }
+  }
+
   .header {
     height: 70px;
     position: relative;
@@ -175,13 +182,6 @@
       line-height: 40px;
       border-bottom: 1px solid lightgray;
       padding-left: 10px;
-
-      .title-bar-buttons {
-        float: right;
-         i {
-           padding: 0 10px;
-         }
-      }
     }
     .charts {
       width: calc(100% - 40px);
@@ -254,6 +254,99 @@
 
         &:not(:last-child) {
           border-right: 1px solid gray;
+        }
+      }
+    }
+  }
+
+  .statistics {
+    margin-top: 20px;
+
+    .visitors-report {
+      width: 43em;
+      background-color: white;
+      border-top: 2px solid green;
+
+      .visitors-report-header {
+        color: gray;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid lightgray;
+        padding-left: 10px;
+      }
+
+      .map {
+        width: 75%;
+        height: 350px;
+        display: inline-block;
+        float: left;
+      }
+
+      .map-charts {
+        color: white;
+        display: inline-block;
+        height: 350px;
+        text-align: center;
+        background-color: green;
+        width: 25%;
+
+        h4 {
+          font-weight: bold;
+        }
+
+        .chart {
+          height: calc(33% - 10px);
+          padding-top: 10px;
+          vertical-align: middle;
+        }
+
+        .bar-chart {
+          height: 50px;
+          width: 33%;
+          margin-left: 33%;
+          border-bottom: 1px solid white;
+          position: relative;
+          margin-bottom: 10px;
+
+          span {
+            width: 5px;
+            margin:0 2px;
+            color: white;
+            display: inline-block;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+
+            &:first-child {
+              left: 0;
+              height: 20px;
+            }
+
+            &:nth-child(2) {
+              left: 8px;
+              height: 2px;
+            }
+            &:nth-child(3) {
+              left: 16px;
+              height: 12px;
+            }
+            &:nth-child(4) {
+              left: 24px;
+              height: 8px;
+            }
+            &:nth-child(5) {
+              left: 32px;
+              height: 34px;
+            }
+            &:nth-child(6) {
+              left: 40px;
+              height: 6px;
+            }
+            &:nth-child(7) {
+              left: 48px;
+              height: 9px;
+            }
+          }
         }
       }
     }
