@@ -7,6 +7,22 @@
      }
   }
 
+  progress.bg-skyblue::-webkit-progress-value {
+    background-color: #01bfef;
+  }
+  progress.bg-red::-webkit-progress-value {
+    background-color: red;
+  }
+  progress.bg-green::-webkit-progress-value {
+    background-color: green;
+  }
+  progress.bg-orange::-webkit-progress-value {
+    background-color: orange;
+  }
+  progress.bg-white::-webkit-progress-value {
+    background-color: white;
+  }
+
   .header {
     height: 70px;
     position: relative;
@@ -225,19 +241,6 @@
             background-color: lightgray;
             border-radius: 2px;
           }
-
-          progress.bg-skyblue::-webkit-progress-value {
-            background-color: #01bfef;
-          }
-          progress.bg-red::-webkit-progress-value {
-            background-color: red;
-          }
-          progress.bg-green::-webkit-progress-value {
-            background-color: green;
-          }
-          progress.bg-orange::-webkit-progress-value {
-            background-color: orange;
-          }
         }
       }
     }
@@ -264,6 +267,8 @@
 
     .visitors-report {
       width: 43em;
+      display: inline-block;
+      float: left;
       background-color: white;
       border-top: 2px solid green;
 
@@ -287,7 +292,6 @@
         display: inline-block;
         height: 350px;
         text-align: center;
-        background-color: green;
         width: 25%;
 
         h4 {
@@ -347,6 +351,66 @@
               height: 9px;
             }
           }
+        }
+      }
+    }
+  }
+
+  .analysis {
+    display: inline-block;
+    margin-left: 2em;
+    width: calc(100% - 45em);
+
+    .data-section {
+      height: calc(392px / 4 - 10px );
+      width: 100%;
+      border-radius: 2px;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+
+      .icon {
+        width: 30%;
+        height: 100%;
+        line-height: calc(392px / 4);
+        display: inline-block;
+        float: left;
+        text-align: center;
+        color: white;
+        i {
+          font-size: 26px;
+        }
+      }
+
+      .details {
+        width: 70%;
+        height: 100%;
+        display: inline-block;
+        text-align: left;
+        color: white;
+
+        progress {
+          height: 2px;
+          width: 100%;
+        }
+        progress[value]::-webkit-progress-bar {
+          background-color: lightgray;
+          border-radius: 2px;
+        }
+
+        .title, .value, .description {
+          padding-left: 10px;
+        }
+        .title {
+          padding-top: 6px;
+        }
+        .value {
+          font-weight: bold;
+        }
+
+        .description {
+          font-size: 12px;
         }
       }
     }
