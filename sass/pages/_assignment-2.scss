@@ -151,7 +151,7 @@
 
   .container {
     display: inline-block;
-    width: calc(100% - 240px);
+    width: 100%;
     background-color: #eceff4;
     padding: 10px;
     margin-left: 220px;
@@ -203,7 +203,7 @@
       width: 23%;
       height: 100px;
       &:not(:last-child) {
-        margin-right: 27px;
+        margin-right: 2.5%;
       }
       .icon {
         width: 30%;
@@ -249,13 +249,13 @@
       img {
         display: inline-block;
         float: left;
-        width: 43em;
+        width: 60%;
         height: 206px;
       }
 
       .goals {
         display: inline-block;
-        width: calc(100% - 45em);
+        width: calc(40% - 2em);
         margin-left: 2em;
 
         h3 {
@@ -308,7 +308,7 @@
     margin-top: 20px;
 
     .visitors-report {
-      width: 43em;
+      width: 60%;
       display: inline-block;
       float: left;
       background-color: white;
@@ -401,7 +401,7 @@
   .analysis {
     display: inline-block;
     margin-left: 2em;
-    width: calc(100% - 45em);
+    width: calc(40% - 2em);
 
     .data-section {
       height: calc(392px / 4 - 10px );
