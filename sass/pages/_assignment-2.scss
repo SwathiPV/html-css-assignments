@@ -151,6 +151,38 @@
     margin-left: 220px;
   }
 
+  .dashboard-title {
+    height: 40px;
+    margin-bottom: 5px 0;
+    padding-right: 10px;
+    h3, ol, li {
+      display: inline-block;
+    }
+
+    .version {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .break-crumbs {
+      font-size: 12px;
+      color: gray;
+      float: right;
+
+      li {
+        padding: 0 5px;
+
+        &:not(:first-child):before {
+          content: '\003e';
+        }
+        &.active {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
   .summary-section {
     overflow: hidden;
     margin-bottom: 15px;
