@@ -8,9 +8,8 @@ html {
  * Remove default margin.
  */
 
-body {
+body, ul {
   margin: 0;
-  height: 100vh;
 }
 
 /* HTML5 display definitions
@@ -415,6 +414,7 @@ table {
 }
 
 td,
-th {
+th,
+ul {
   padding: 0;
 }

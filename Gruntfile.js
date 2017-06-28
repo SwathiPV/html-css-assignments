@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ["./sass/*" ],
+      files: ["./sass/*/*", './sass/*' ],
       tasks: ["sass"]
     },
   });
