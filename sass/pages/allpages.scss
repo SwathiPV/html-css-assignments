@@ -1,0 +1,11 @@
+@import "home";
+@import "assignment-1";
+@import "assignment-2";
+
+#app {
+  @import "responsive";
+}
+
+#app2 {
+  @import "responsive-2";
+}

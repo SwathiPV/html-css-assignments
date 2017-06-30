@@ -1,15 +1,3 @@
-@import "reset";
-@import "base";
-@import "colors";
+@import "partials/partials";
 @import "vendors/vendors";
-@import "index";
-@import "pages/assignment-1";
-@import "pages/assignment-2";
-
-#app {
-  @import "responsive";
-}
-
-#app2 {
-  @import "responsive-2";
-}
+@import "pages/allpages";
