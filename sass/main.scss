@@ -5,5 +5,11 @@
 @import "index";
 @import "pages/assignment-1";
 @import "pages/assignment-2";
-// @import "responsive";
-@import "responsive-2";
+
+#app {
+  @import "responsive";
+}
+
+#app2 {
+  @import "responsive-2";
+}
