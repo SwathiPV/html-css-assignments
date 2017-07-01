@@ -8,18 +8,18 @@
 
   .logo {
     margin: 15px;
-    width: 200px;
+    width: $px-200;
   }
 
   .hamburger {
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: $px-30;
   }
 
   .fa-ellipsis-v {
     cursor: pointer;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-right: $px-30;
+    margin-top: $px-30;
   }
 
   .header-menu li {
@@ -33,33 +33,33 @@
   }
 
   .header-menu sup {
-    left: -10px;
+    left: -$px-10;
     top: -.8em;
   }
 
   .profile-image {
-    height: 30px;
-    margin-bottom: -10px;
-    margin-right: 5px;
-    width: 30px;
+    height: $px-30;
+    margin-bottom: -$px-10;
+    margin-right: $px-5;
+    width: $px-30;
   }
 }
 
 .sidebar {
   background-color: $blue-grey-darken-4;
   color: $white;
-  height: 100%;
+  height: $percentage-100;
   overflow: auto;
   position: fixed;
   width: 220px;
 
   .user-info {
-    height: 50px;
+    height: $px-50;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: $px-10;
 
     .profile-image {
-      margin-right: 10px;
+      margin-right: $px-10;
     }
 
     .online-status {
@@ -68,14 +68,14 @@
   }
 
   .search {
-    margin: 10px 0;
+    margin: $px-10 0;
     position: relative;
     text-align: center;
 
     .search-input {
       background-color: $blue-grey-darken-3;
-      border-radius: 4px;
-      height: 30px;
+      border-radius: $px-4;
+      height: $px-30;
       text-indent: 15px;
     }
 
@@ -83,7 +83,7 @@
       color: $gray;
       position: absolute;
       right: 25px;
-      top: 7px;
+      top: $px-7;
     }
   }
 
@@ -95,11 +95,11 @@
   .sidebar-menu-item,
   .separator {
     cursor: pointer;
-    line-height: 40px;
-    padding-left: 10px;
+    line-height: $px-40;
+    padding-left: $px-10;
 
     i {
-      margin-right: 10px;
+      margin-right: $px-10;
     }
 
     .badge {
@@ -109,7 +109,7 @@
 
   .fa-angle-left {
     float: right;
-    margin-top: 10px;
+    margin-top: $px-10;
   }
 
   .labels {
@@ -122,15 +122,15 @@
 .container {
   background-color: $light-gray;
   margin-left: 220px;
-  padding: 10px;
+  padding: $px-10;
   width: calc(100% - 240px);
 }
 
 .dashboard-title {
-  height: 40px;
-  line-height: 40px;
-  margin-bottom: 5px 0;
-  padding-right: 10px;
+  height: $px-40;
+  line-height: $px-40;
+  margin-bottom: $px-5 0;
+  padding-right: $px-10;
 
   h3,
   ol,
@@ -148,7 +148,7 @@
     font-size: 12px;
 
     li {
-      padding: 0 5px;
+      padding: 0 $px-5;
 
       //scss-lint:disable PseudoElement
       &:not(:first-child):before {
@@ -175,7 +175,7 @@
   .summary {
     display: inline-block;
     float: left;
-    height: 100px;
+    height: $px-100;
     width: 23%;
 
     &:not(:last-child) {
@@ -185,10 +185,10 @@
 
   .summary-icon {
     color: $white;
-    height: 100px;
-    line-height: 100px;
+    height: $px-100;
+    line-height: $px-100;
     text-align: center;
-    width: 30%;
+    width: $percentage-30;
 
     i {
       font-size: 2em;
@@ -198,30 +198,30 @@
   .summary-content {
     background-color: $white;
     height: calc(100% - 10px);
-    padding: 10px 0 0 10px;
+    padding: $px-10 0 0 $px-10;
     width: calc(70% - 10px);
 
     h4 {
-      margin-bottom: 5px;
+      margin-bottom: $px-5;
     }
   }
 }
 
 .recap-report-container {
   background-color: $white;
-  border-top: 2px solid $gray;
+  border-top: $px-2 solid $gray;
 
   .recap-report-header {
     border-bottom: 1px solid $lightgray;
     color: $gray;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 10px;
+    height: $px-40;
+    line-height: $px-40;
+    padding-left: $px-40;
   }
 
   .recap-report-details {
     border-bottom: 1px solid $lightgray;
-    padding: 10px 20px 20px;
+    padding: $px-10 $px-20 $px-20;
     width: calc(100% - 40px);
   }
 
@@ -229,7 +229,7 @@
     display: inline-block;
     float: left;
     height: 206px;
-    width: 60%;
+    width: $percentage-60;
   }
 
   .goals {
@@ -237,13 +237,13 @@
     width: calc(40% - 2em);
 
     .goal {
-      margin-top: 10px;
+      margin-top: $px-10;
 
       label {
         display: inline-block;
         font-size: 12px;
         font-weight: bold;
-        width: 100%;
+        width: $percentage-100;
 
         .score {
           float: right;
@@ -251,12 +251,12 @@
       }
 
       progress {
-        height: 10px;
-        width: 100%;
+        height: $px-10;
+        width: $percentage-100;
       }
 
       progress[value]::-webkit-progress-bar {
-        border-radius: 2px;
+        border-radius: $px-2;
       }
     }
   }
@@ -269,32 +269,32 @@
       background-color: $white;
       display: inline-block;
       float: left;
-      line-height: 20px;
-      margin: 30px 0;
+      line-height: $px-20;
+      margin: $px-30 0;
       text-align: center;
       width: calc(25% - 1px);
 
       &:not(:last-child) {
-        border-right: 1px solid $gray;
+        border-right: $px-1 solid $gray;
       }
     }
   }
 }
 
 .statistics {
-  margin-top: 20px;
+  margin-top: $px-20;
 
   .visitors-report {
     background-color: $white;
     border-top: 2px solid $green;
-    width: 60%;
+    width: $percentage-60;
 
     .visitors-report-header {
       border-bottom: 1px solid $lightgray;
       color: $gray;
-      height: 40px;
-      line-height: 40px;
-      padding-left: 10px;
+      height: $px-40;
+      line-height: $px-40;
+      padding-left: $px-10;
     }
 
     .map {
@@ -310,15 +310,15 @@
 
     .chart {
       height: calc(33% - 10px);
-      padding-top: 10px;
+      padding-top: $px-10;
       vertical-align: middle;
     }
 
     .bar-chart {
-      border-bottom: 1px solid $white;
+      border-bottom: $px-1 solid $white;
       display: inline-block;
-      height: 50px;
-      margin-bottom: 10px;
+      height: $px-50;
+      margin-bottom: $px-10;
       position: relative;
       width: 56px;
 
@@ -327,18 +327,18 @@
         bottom: 0;
         color: $white;
         display: inline-block;
-        margin: 0 2px;
+        margin: 0 $px-2;
         position: absolute;
-        width: 5px;
+        width: $px-5;
 
         &:first-child {
-          height: 20px;
+          height: $px-20;
           left: 0;
         }
 
         &:nth-child(2) {
-          height: 2px;
-          left: 8px;
+          height: $px-2;
+          left: $px-8;
         }
 
         &:nth-child(3) {
@@ -347,7 +347,7 @@
         }
 
         &:nth-child(4) {
-          height: 8px;
+          height: $px-8;
           left: 24px;
         }
 
@@ -357,12 +357,12 @@
         }
 
         &:nth-child(6) {
-          height: 6px;
-          left: 40px;
+          height: $px-6;
+          left: $px-40;
         }
 
         &:nth-child(7) {
-          height: 9px;
+          height: $px-9;
           left: 48px;
         }
       }
@@ -375,9 +375,9 @@
   width: calc(40% - 2em);
 
   .data-section {
-    border-radius: 2px;
+    border-radius: $px-2;
     height: calc(392px / 4 - 10px);
-    width: 100%;
+    width: $percentage-100;
 
     &:not(:last-child) {
       margin-bottom: 14px;
@@ -388,10 +388,10 @@
     color: $white;
     display: inline-block;
     float: left;
-    height: 100%;
+    height: $percentage-100;
     line-height: calc(392px / 4);
     text-align: center;
-    width: 30%;
+    width: $percentage-30;
 
     i {
       font-size: 26px;
@@ -401,29 +401,29 @@
   .details {
     color: $white;
     display: inline-block;
-    height: 100%;
+    height: $percentage-100;
     text-align: left;
-    width: 70%;
+    width: $percentage-70;
 
     progress {
-      height: 2px;
-      width: 100%;
+      height: $px-2;
+      width: $percentage-100;
     }
 
     progress[value]::-webkit-progress-bar {
       background-color: $lightgray;
-      border-radius: 2px;
+      border-radius: $px-2;
     }
 
     .title,
     .value,
     .description {
-      padding-left: 10px;
+      padding-left: $px-10;
     }
 
     .title {
       font-size: 14px;
-      padding-top: 6px;
+      padding-top: $px-6;
     }
 
     .value {
