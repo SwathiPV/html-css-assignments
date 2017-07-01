@@ -32,4 +32,12 @@ $colors: (
   .bg-#{$color-name} {
     background-color: $color $important;
   }
+
+  progress.val-#{$color-name}::-webkit-progress-value {
+    background-color: $color $important;
+  }
+
+  progress.bg-#{$color-name}[value]::-webkit-progress-bar {
+    background-color: $color $important;
+  }
 }
