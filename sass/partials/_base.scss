@@ -23,6 +23,42 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: $fontsize22;
+}
+
+h2 {
+  font-size: $fontsize20;
+}
+
+h3 {
+  font-size: $fontsize18;
+}
+
+h4 {
+  font-size: $fontsize16;
+}
+
+h5 {
+  font-size: $fontsize14;
+}
+
+h6 {
+  font-size: $fontsize12;
+}
+
+p,
+ul li,
+a,
+button,
+input,
+label,
+select,
+textarea,
+table tr td {
+  font-size: $fontsize16;
+}
+
 button {
   cursor: pointer;
   outline: none;
