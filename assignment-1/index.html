@@ -28,27 +28,28 @@
             <span>Acme corp</span>
           </div>
           <hr size='1' />
-          <nav>
+          <nav class='sidebar-navigation'>
             <ul>
-            <li class='organization-name'>
-              Acme Corp
-              <i class="fa fa-sign-out" aria-hidden="true"></i>
-            </li>
-            <li>
-              <i class="fa fa-briefcase" aria-hidden="true"></i>Organization Info
-            </li>
-            <li>
-              <i class="fa fa-tags" aria-hidden="true"></i>Tags
-            </li>
-            <li>
-              <i class="fa fa-cube" aria-hidden="true"></i>Aggregation units
-            </li>
-            <li class='active'>
-              <i class="fa fa-file" aria-hidden="true"></i>Reports
-            </li>
-            <li class='logout'>
-              <i class="fa fa-power-off" aria-hidden="true"></i>Logout
-            </li>
+              <li class='sidebar-menu-item organization-name'>
+                Acme Corp
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+              </li>
+              <li class='sidebar-menu-item'>
+                <i class="sidebar-menu-icon fa fa-briefcase" aria-hidden="true"></i>Organization Info
+              </li>
+              <li class='sidebar-menu-item'>
+                <i class="sidebar-menu-icon fa fa-tags" aria-hidden="true"></i>Tags
+              </li>
+              <li class='sidebar-menu-item'>
+                <i class="sidebar-menu-icon fa fa-cube" aria-hidden="true"></i>Aggregation units
+              </li>
+              <li class='sidebar-menu-item active'>
+                <i class="sidebar-menu-icon fa fa-file" aria-hidden="true"></i>Reports
+              </li>
+              <li class='sidebar-menu-item logout'>
+                <i class="sidebar-menu-icon fa fa-power-off" aria-hidden="true"></i>Logout
+              </li>
+            </ul>
           </nav>
         </div>
         <div class='content'>
@@ -59,7 +60,7 @@
           <div class='reports'>
             <div class='report'>
               <div class='report-details'>
-                <h3>Report 1</h3>
+                <h3 class='report-name'>Report 1</h3>
                 <button class='btn'> Archive report</button>
                 <span class='next-report-date truncate'><i class="fa fa-clock-o" aria-hidden="true"></i> Next report on 5th April</span><br />
                 <img src='../img/userReport.png' />
@@ -67,10 +68,10 @@
               <div class='subscriber-details'>
                 <button class='btn-flat no-of-subscribers'> 10 Subscribers </button>
                 <div class='subscribers-input'>
-                  <div class='chips'>
-                    <span class='chip'>Jhon Deo <i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                    <span class='chip'>T Stark <i class="fa fa-times-circle" aria-hidden="true"></i></span>
-                    <span class='chip'>Jhon Snow <i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                  <div class='chips-container'>
+                    <span class='chip'>Jhon Deo <i class="fa fa-times-circle chip-cross" aria-hidden="true"></i></span>
+                    <span class='chip'>T Stark <i class="fa fa-times-circle chip-cross" aria-hidden="true"></i></span>
+                    <span class='chip'>Jhon Snow <i class="fa fa-times-circle chip-cross" aria-hidden="true"></i></span>
                   </div>
                   <input type='text' autofocus />
                   <label class='truncate'>Add members to email subscription list</label>
