@@ -23,6 +23,7 @@
     display: inline-block;
     float: left;
     position: relative;
+    width: 40%;
 
     .search-icon {
       color: $search-icon-color;
@@ -37,7 +38,7 @@
       font-size: 15px;
       height: $px-30;
       text-indent: 45px;
-      width: 30em;
+      width: 100%;
     }
   }
 }
