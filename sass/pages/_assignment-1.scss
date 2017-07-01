@@ -10,7 +10,7 @@
     float: left;
     margin-right: 18px;
     padding: $padding5px;
-    width: 200px;
+    width: $px-200;
   }
 
   .search-box {
@@ -29,7 +29,7 @@
       background-color: $search-box-bg;
       border: 0;
       font-size: 15px;
-      height: 30px;
+      height: $px-30;
       text-indent: 45px;
       width: 30em;
     }
@@ -41,22 +41,22 @@
   @include sidebar($sidebar-bg);
 
   .user-info {
-    padding-left: 20px;
+    padding-left: $px-20;
 
     .initial {
       border: 3px solid $white;
-      border-radius: 50%;
-      font-size: 30px;
-      height: 50px;
-      line-height: 50px;
+      border-radius: $percentage-50;
+      font-size: $fontsize30;
+      height: $px-50;
+      line-height: $px-50;
       margin: 15px 0;
       text-align: center;
-      width: 50px;
+      width: $px-50;
     }
   }
 
   hr {
-    width: 90%;
+    width: $percentage-90;
   }
 
   .sidebar-navigation {
@@ -65,32 +65,32 @@
   }
 
   .sidebar-menu-item {
-    height: 50px;
-    line-height: 50px;
+    height: $px-50;
+    line-height: $px-50;
 
     &.active {
       background-color: $black;
-      border-left: 3px solid $white;
+      border-left: $px-3 solid $white;
     }
 
     &.organization-name {
-      padding: 0 20px;
+      padding: 0 $px-20;
     }
 
     .fa-sign-out {
       margin-left: 58px;
-      padding: 0 0 0 20px $important;
+      padding: 0 0 0 $px-20 $important;
     }
 
     &.logout {
       background-color: $logout-btn-bg;
       bottom: 0;
       position: absolute;
-      width: 100%;
+      width: $percentage-100;
     }
 
     .sidebar-menu-icon {
-      padding: 0 20px;
+      padding: 0 $px-20;
     }
   }
 }
@@ -98,37 +98,37 @@
 .content {
   background-color: $gray;
   float: right;
-  padding: 2px;
+  padding: $px-2;
   width: calc(100% - 220px);
 }
 
 .reports-header {
   background-color: $white;
-  height: 50px;
-  line-height: 50px;
-  margin: 8px;
+  height: $px-50;
+  line-height: $px-50;
+  margin: $px-8;
   width: calc(100% - 16px);
 
   .fa-info-circle {
-    font-size: 20px;
+    font-size: $fontsize20;
     padding: 0 18px;
   }
 
   .archived-reports {
-    border-bottom: 1px dashed $blue-accent-4;
+    border-bottom: $px-1 dashed $blue-accent-4;
   }
 }
 
 .report {
   background-color: $white;
-  margin: 8px;
+  margin: $px-8;
   overflow: hidden;
   padding: 18px;
 
   .report-details {
     display: inline-block;
     float: left;
-    width: 50%;
+    width: $percentage-50;
 
     .report-name {
       display: inline-block;
@@ -137,8 +137,8 @@
     .next-report-date {
       color: $blue;
       display: block;
-      font-size: 15px;
-      padding: 1% 0;
+      font-size: $fontsize14 + 1px;
+      padding: $percentage-1 0;
     }
 
     img {
@@ -158,7 +158,7 @@
   .subscriber-details {
     display: inline-block;
     float: left;
-    padding-left: 30px;
+    padding-left: $px-30;
     width: calc(50% - 30px);
 
     .no-of-subscribers {
@@ -169,38 +169,38 @@
 
   .subscribers-input {
     color: $gray;
-    margin-top: 40%;
+    margin-top: $percentage-40;
     position: relative;
     z-index: 0;
 
     label {
       position: absolute;
-      top: -20px;
+      top: -$px-20;
       transition: top .5s;
     }
 
     input {
       border: 0;
-      border-bottom: 1px solid $gray;
+      border-bottom: $px-1 solid $gray;
       outline: none;
-      width: 100%;
+      width: $percentage-100;
     }
 
     input:focus {
-      border-bottom: 1px solid $blue-accent-4;
+      border-bottom: $px-1 solid $blue-accent-4;
     }
 
     input:focus+label,
     .chips ~ label {
       color: $blue-accent-4;
-      top: -60px $important;
+      top: -$px-60 $important;
       transition: top .5s $important;
     }
 
     .chips-container {
       position: absolute;
       top: -28px;
-      width: 100%;
+      width: $percentage-100;
     }
 
     .chip {
@@ -210,20 +210,20 @@
       display: inline-block;
       height: 32px;
       line-height: 32px;
-      margin-right: 5px;
-      margin-top: 5px;
-      padding: 0 0 0 20px;
+      margin-right: $px-5;
+      margin-top: $px-5;
+      padding: 0 0 0 $px-20;
     }
 
     .chip-cross {
       cursor: pointer;
-      font-size: 18px;
-      padding: 7px 10px;
+      font-size: $fontsize18;
+      padding: $px-7 $px-10;
     }
   }
 
   .action-buttons {
-    margin-top: 5%;
+    margin-top: $percentage-5;
 
     .add-non-members {
       color: $blue-accent-4;
