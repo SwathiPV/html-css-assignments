@@ -168,12 +168,10 @@
   overflow: hidden;
 
   div {
-    display: inline-block;
     float: left;
   }
 
   .summary {
-    display: inline-block;
     float: left;
     height: $px-100;
     width: 23%;
@@ -226,7 +224,6 @@
   }
 
   .recap-report-chart {
-    display: inline-block;
     float: left;
     height: 206px;
     width: $percentage-60;
@@ -267,7 +264,6 @@
 
     .total {
       background-color: $white;
-      display: inline-block;
       float: left;
       line-height: $px-20;
       margin: $px-30 0;
@@ -326,7 +322,6 @@
         background-color: $white;
         bottom: 0;
         color: $white;
-        display: inline-block;
         margin: 0 $px-2;
         position: absolute;
         width: $px-5;
@@ -386,7 +381,6 @@
 
   .analysis-icon {
     color: $white;
-    display: inline-block;
     float: left;
     height: $percentage-100;
     line-height: calc(392px / 4);
