@@ -1,0 +1,17 @@
+%btn {
+  border: 0;
+  color: $black;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.btn-raised {
+  @extend %btn;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px -5px $gray;
+}
+
+.btn-flat {
+  @extend %btn;
+  background-color: transparent $important;
+}
