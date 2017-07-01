@@ -8,7 +8,7 @@
   .report-details,
   .subscriber-details {
     display: block $important;
-    width: 100% $important;
+    width: $percentage-100 $important;
   }
 
   .subscriber-details {
@@ -48,7 +48,7 @@
   .menu-icon {
     display: inline-block $important;
     float: left;
-    font-size: 20px;
+    font-size: $px-20;
     padding: 0 15px;
   }
 
@@ -58,7 +58,7 @@
 
   .search-icon {
     color: $search-icon-color $important;
-    font-size: 20px $important;
+    font-size: $px-20 $important;
     left: 0 $important;
     top: 25px $important;
   }
@@ -73,7 +73,7 @@
   }
 
   .content {
-    width: 100% $important;
+    width: $percentage-100 $important;
   }
 }
 

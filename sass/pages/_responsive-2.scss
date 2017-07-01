@@ -1,22 +1,22 @@
 @media only screen and (min-width: 768px) and (max-width: 930px), only screen and (max-width: 700px)  {
   .summary {
-    margin-top: 3px;
+    margin-top: $px-3;
     width: 47% $important;
   }
 
   .recap-report img,
   .visitors-report {
-    width: 100% $important;
+    width: $percentage-100 $important;
   }
 
   .goals,
   .analysis {
     margin-left: 0 $important;
-    width: 100% $important;
+    width: $percentage-100 $important;
   }
 
   .analysis {
-    margin-top: 10px;
+    margin-top: $px-10;
   }
 }
 
@@ -67,7 +67,7 @@
   }
 
   .summary {
-    margin-top: 3px;
+    margin-top: $px-3;
     width: 98% $important;
   }
 }
