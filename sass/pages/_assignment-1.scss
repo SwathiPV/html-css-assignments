@@ -87,7 +87,7 @@
 
     .fa-sign-out {
       margin-left: 58px;
-      padding: 0 0 0 $px-20 $important;
+      padding: 0 0 0 $px-20;
     }
 
     &.logout {
@@ -201,8 +201,7 @@
     input:focus+label,
     .chips-container ~ label {
       color: $blue-accent-4;
-      top: -$px-60 $important;
-      transition: top .5s $important;
+      top: -$px-60;
     }
 
     .chips-container {
