@@ -1,7 +1,6 @@
 //scss-lint:disable QualifyingElement SelectorDepth NestingDepth
 
-@import '../partials/title-bar-actions';
-@import '../partials/color-classes';
+@import '../../partials/title-bar-actions';
 
 .header {
   @include header($blue);
@@ -214,7 +213,7 @@
     color: $gray;
     height: $px-40;
     line-height: $px-40;
-    padding-left: $px-40;
+    padding-left: $px-10;
   }
 
   .recap-report-details {
