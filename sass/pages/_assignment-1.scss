@@ -65,7 +65,7 @@
   }
 
   .sidebar-navigation {
-    height: calc(100vh - 210px);
+    @include calc-vendor-prefix(height, '100vh - 210px');
     position: relative;
   }
 
@@ -102,18 +102,18 @@
 }
 
 .content {
+  @include calc-vendor-prefix(width, '100% - 220px');
   background-color: $light-gray;
   float: right;
   padding: $px-2;
-  width: calc(100% - 220px);
 }
 
 .reports-header {
+  @include calc-vendor-prefix(width, '100% - 16px');
   background-color: $white;
   height: $px-50;
   line-height: $px-50;
   margin: $px-8;
-  width: calc(100% - 16px);
 
   .fa-info-circle {
     font-size: $fontsize20;
@@ -161,9 +161,9 @@
   }
 
   .subscriber-details {
+    @include calc-vendor-prefix(width, '50% - 30px');
     float: left;
     padding-left: $px-30;
-    width: calc(50% - 30px);
 
     .no-of-subscribers {
       color: $red-accent-1;

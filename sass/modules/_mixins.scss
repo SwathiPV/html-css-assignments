@@ -22,3 +22,13 @@
   height: 100%;
   overflow: auto;
 }
+
+
+$vendor-prefixes: (-webkit-, -moz-, -o-, -ms-);
+
+@mixin calc-vendor-prefix($property-name, $property-value) {
+  @each $prefix in $vendor-prefixes {
+    #{$property-name}: #{$prefix}calc(#{$property-value});
+  }
+  #{$property-name}: calc(#{$property-value});
+}

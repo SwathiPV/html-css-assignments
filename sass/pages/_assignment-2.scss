@@ -120,10 +120,10 @@
 }
 
 .container {
+  @include calc-vendor-prefix(width, '100% - 240px');
   background-color: $light-gray;
   margin-left: 220px;
   padding: $px-10;
-  width: calc(100% - 240px);
 }
 
 .dashboard-title {
@@ -194,10 +194,10 @@
   }
 
   .summary-content {
+    @include calc-vendor-prefix(height, '100% - 10px');
+    @include calc-vendor-prefix(width, '70% - 10px');
     background-color: $white;
-    height: calc(100% - 10px);
     padding: $px-10 0 0 $px-10;
-    width: calc(70% - 10px);
 
     h4 {
       margin-bottom: $px-5;
@@ -218,9 +218,9 @@
   }
 
   .recap-report-details {
+    @include calc-vendor-prefix(width, '100% - 40px');
     border-bottom: 1px solid $lightgray;
     padding: $px-10 $px-20 $px-20;
-    width: calc(100% - 40px);
   }
 
   .recap-report-chart {
@@ -230,8 +230,8 @@
   }
 
   .goals {
+    @include calc-vendor-prefix(width, '40% - 2em');
     margin-left: 2em;
-    width: calc(40% - 2em);
 
     .goal {
       margin-top: $px-10;
@@ -263,12 +263,12 @@
     overflow: hidden;
 
     .total {
+      @include calc-vendor-prefix(width, '25% - 1px');
       background-color: $white;
       float: left;
       line-height: $px-20;
       margin: $px-30 0;
       text-align: center;
-      width: calc(25% - 1px);
 
       &:not(:last-child) {
         border-right: $px-1 solid $gray;
@@ -305,7 +305,7 @@
     }
 
     .chart {
-      height: calc(33% - 10px);
+      @include calc-vendor-prefix(height, '33% - 10px');
       padding-top: $px-10;
       vertical-align: middle;
     }
@@ -366,12 +366,12 @@
 }
 
 .analysis {
+  @include calc-vendor-prefix(width, '40% - 2em');
   margin-left: 2em;
-  width: calc(40% - 2em);
 
   .data-section {
+    @include calc-vendor-prefix(height, '392px / 4 - 10px');
     border-radius: $px-2;
-    height: calc(392px / 4 - 10px);
     width: $percentage-100;
 
     &:not(:last-child) {
@@ -380,10 +380,10 @@
   }
 
   .analysis-icon {
+    @include calc-vendor-prefix(line-height, '392px / 4');
     color: $white;
     float: left;
     height: $percentage-100;
-    line-height: calc(392px / 4);
     text-align: center;
     width: $percentage-30;
 
