@@ -35,8 +35,12 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .menu-icon {
+  .menu-icon-md {
     display: none $important;
+  }
+
+  .menu-icon-lg {
+    display: inline-block $important;
   }
 }
 
@@ -45,11 +49,12 @@
     font-size: 15px $important;
   }
 
-  .menu-icon {
+  .menu-icon-lg {
+    display: none $important;
+  }
+
+  .menu-icon-md {
     display: inline-block $important;
-    float: left;
-    font-size: $px-20;
-    padding: 0 15px;
   }
 
   .search-input {

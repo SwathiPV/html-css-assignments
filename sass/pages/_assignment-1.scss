@@ -12,6 +12,13 @@
     width: $px-200;
   }
 
+  .menu-icon-md,
+  .menu-icon-lg {
+    float: left;
+    font-size: $px-20;
+    padding: 0 15px;
+  }
+
   .search-box {
     display: inline-block;
     float: left;
