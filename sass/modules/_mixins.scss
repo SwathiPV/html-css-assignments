@@ -12,3 +12,12 @@
     z-index: 1;
   }
 }
+
+@mixin sidebar ($background-color) {
+  width: 220px;
+  background-color: $background-color;
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}

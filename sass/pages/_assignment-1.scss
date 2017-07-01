@@ -39,10 +39,7 @@
 
 
 .sidebar {
-  position: fixed;
-  background-color: #2f3b4f;
-  width: 220px;
-  color: white;
+  @include sidebar(#2f3b4f);
 
   .user-info {
     padding-left: 20px;
