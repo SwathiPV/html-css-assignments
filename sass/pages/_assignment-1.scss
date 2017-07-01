@@ -71,7 +71,7 @@
         padding: 0 20px;
 
         i {
-          padding:0 0 0 20px !important;
+          padding:0 0 0 20px $important;
           margin-left: 58px;
         }
       }
@@ -196,8 +196,8 @@
 
           input:focus+label, .chips ~ label {
             color: $blue-accent-4;
-            top: -60px !important;
-            transition: top 0.5s !important;
+            top: -60px $important;
+            transition: top 0.5s $important;
           }
 
           .chips {
