@@ -191,7 +191,7 @@
     }
 
     input:focus+label,
-    .chips ~ label {
+    .chips-container ~ label {
       color: $blue-accent-4;
       top: -$px-60 $important;
       transition: top .5s $important;
