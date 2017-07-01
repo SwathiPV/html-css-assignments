@@ -1,6 +1,7 @@
 //scss-lint:disable QualifyingElement SelectorDepth NestingDepth
 
 @import '../partials/title-bar-actions';
+@import '../partials/color-classes';
 
 progress.bg-skyblue::-webkit-progress-value {
   background-color: $light-blue;
