@@ -1,11 +1,13 @@
-@import "home";
+//scss-lint:disable IdSelector
+
+@import 'home';
 
 #app {
-  @import "assignment-1";
-  @import "responsive";
+  @import 'assignment-1';
+  @import 'responsive';
 }
 
 #app2 {
-  @import "assignment-2";
-  @import "responsive-2";
+  @import 'assignment-2';
+  @import 'responsive-2';
 }

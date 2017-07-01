@@ -3,20 +3,21 @@
   position: relative;
 
   .appbar {
+    background-color: $background-color;
+    box-shadow: 0 1px 5px $gray;
     height: 70px;
     line-height: 70px;
-    width: 100%;
     position: fixed;
-    background-color: $background-color;
-    box-shadow: 0 1px 5px gray;
+    width: 100%;
+
     z-index: 1;
   }
 }
 
 @mixin sidebar ($background-color) {
-  width: 220px;
   background-color: $background-color;
-  color: white;
+  color: $white;
+  width: 220px;
   position: fixed;
   height: 100%;
   overflow: auto;
