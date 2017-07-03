@@ -2,25 +2,29 @@
   position: relative;
 
   .assignment-button {
+    background: $white;
+    color: $red-accent-1;
+    font-weight: bold;
+    height: $px-40;
+    line-height: $px-40;
     position: absolute;
-    background: white;
-    width: 180px;
-    height: 40px;
-    line-height: 40px;
     text-align: center;
     text-decoration: none;
-    color: #d66f60;
-    font-weight: bold;
+    width: 180px;
 
-    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-      border-top-right-radius: 26px;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
       border-bottom-right-radius: 26px;
+      border-top-right-radius: 26px;
     }
 
-    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
-      right: 0;
-      border-top-left-radius: 26px;
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
       border-bottom-left-radius: 26px;
+      border-top-left-radius: 26px;
+      right: 0;
     }
 
     &:nth-child(1) {

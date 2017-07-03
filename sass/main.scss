@@ -1,6 +1,5 @@
-@import "reset";
-@import "base";
-@import "vendors/vendors";
-@import "index";
-@import "pages/assignment-1";
-@import "responsive";
+@import 'vendors/vendors';
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'partials/partials';
+@import 'pages/allpages';

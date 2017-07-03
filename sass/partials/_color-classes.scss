@@ -1,0 +1,43 @@
+$colors: (
+  'white': $white,
+  'black': $black,
+  'light-gray': $light-gray,
+  'gray': $gray,
+  'lightgray': $lightgray,
+  'blue': $blue,
+  'light-blue': $light-blue,
+  'red': $red,
+  'dark-red': $dark-red,
+  'dark-orange': $dark-orange,
+  'green': $green,
+  'dark-green': $dark-green,
+  'skyblue': $skyblue,
+  'dark-skyblue': $dark-skyblue,
+  'orange': $orange,
+  'indigo': $indigo,
+  'brown-darken-4': $brown-darken-4,
+  'red-accent-1': $red-accent-1,
+  'blue-accent-4': $blue-accent-4,
+  'grey-lighten-2': $grey-lighten-2,
+  'blue-grey-darken-3': $blue-grey-darken-3,
+  'blue-grey-darken-4': $blue-grey-darken-4,
+  'blue-grey-darken-5': $blue-grey-darken-5
+);
+
+@each $color-name, $color in $colors {
+  .text-#{$color-name} {
+    color: $color $important;
+  }
+
+  .bg-#{$color-name} {
+    background-color: $color $important;
+  }
+
+  progress.val-#{$color-name}::-webkit-progress-value {
+    background-color: $color $important;
+  }
+
+  progress.bg-#{$color-name}[value]::-webkit-progress-bar {
+    background-color: $color $important;
+  }
+}

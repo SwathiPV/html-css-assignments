@@ -1,0 +1,34 @@
+@mixin header ($background-color) {
+  height: 70px;
+  position: relative;
+
+  .appbar {
+    background-color: $background-color;
+    box-shadow: 0 1px 5px $gray;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    width: 100%;
+
+    z-index: 1;
+  }
+}
+
+@mixin sidebar ($background-color) {
+  background-color: $background-color;
+  color: $white;
+  width: 220px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+$vendor-prefixes: (-webkit-, -moz-, -o-, -ms-);
+
+@mixin calc-vendor-prefix($property-name, $property-value) {
+  @each $prefix in $vendor-prefixes {
+    #{$property-name}: #{$prefix}calc(#{$property-value});
+  }
+  #{$property-name}: calc(#{$property-value});
+}

@@ -1,0 +1,430 @@
+//scss-lint:disable QualifyingElement SelectorDepth NestingDepth
+
+@import '../../partials/title-bar-actions';
+
+.header {
+  @include header($blue);
+
+  .logo {
+    margin: 15px;
+    width: $px-200;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    margin-top: $px-30;
+  }
+
+  .fa-ellipsis-v {
+    cursor: pointer;
+    margin-right: $px-30;
+    margin-top: $px-30;
+  }
+
+  .header-menu li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 12px;
+  }
+
+  .header-menu-icon {
+    font-weight: bold;
+  }
+
+  .header-menu sup {
+    left: -$px-10;
+    top: -.8em;
+  }
+
+  .profile-image {
+    height: $px-30;
+    margin-bottom: -$px-10;
+    margin-right: $px-5;
+    width: $px-30;
+  }
+}
+
+.sidebar {
+  background-color: $blue-grey-darken-4;
+  color: $white;
+  height: $percentage-100;
+  overflow: auto;
+  position: fixed;
+  width: 220px;
+
+  .user-info {
+    height: $px-50;
+    margin-bottom: 15px;
+    padding: $px-10;
+
+    .profile-image {
+      margin-right: $px-10;
+    }
+
+    .online-status {
+      font-size: 12px;
+    }
+  }
+
+  .search {
+    margin: $px-10 0;
+    position: relative;
+    text-align: center;
+
+    .search-input {
+      background-color: $blue-grey-darken-3;
+      border-radius: $px-4;
+      height: $px-30;
+      text-indent: 15px;
+    }
+
+    .search-icon {
+      color: $gray;
+      position: absolute;
+      right: 25px;
+      top: $px-7;
+    }
+  }
+
+  .separator {
+    background-color: $blue-grey-darken-5;
+    color: $gray;
+  }
+
+  .sidebar-menu-item,
+  .separator {
+    cursor: pointer;
+    line-height: $px-40;
+    padding-left: $px-10;
+
+    i {
+      margin-right: $px-10;
+    }
+
+    .badge {
+      font-size: 12px;
+    }
+  }
+
+  .fa-angle-left {
+    float: right;
+    margin-top: $px-10;
+  }
+
+  .labels {
+    i {
+      font-weight: bold;
+    }
+  }
+}
+
+.container {
+  @include calc-vendor-prefix(width, '100% - 240px');
+  background-color: $light-gray;
+  margin-left: 220px;
+  padding: $px-10;
+}
+
+.dashboard-title {
+  height: $px-40;
+  line-height: $px-40;
+  margin-bottom: $px-5 0;
+  padding-right: $px-10;
+
+  h3,
+  ol,
+  li {
+    display: inline-block;
+  }
+
+  .version {
+    color: $gray;
+    font-size: 12px;
+  }
+
+  .break-crumbs {
+    color: $gray;
+    font-size: 12px;
+
+    li {
+      padding: 0 $px-5;
+
+      //scss-lint:disable PseudoElement
+      &:not(:first-child):before {
+        content: '\003e';
+      }
+
+      &.active {
+        color: $black;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.summary-section {
+  margin-bottom: 15px;
+  overflow: hidden;
+
+  div {
+    float: left;
+  }
+
+  .summary {
+    float: left;
+    height: $px-100;
+    width: 23%;
+
+    &:not(:last-child) {
+      margin-right: 2.5%;
+    }
+  }
+
+  .summary-icon {
+    color: $white;
+    height: $px-100;
+    line-height: $px-100;
+    text-align: center;
+    width: $percentage-30;
+
+    i {
+      font-size: 2em;
+    }
+  }
+
+  .summary-content {
+    @include calc-vendor-prefix(height, '100% - 10px');
+    @include calc-vendor-prefix(width, '70% - 10px');
+    background-color: $white;
+    padding: $px-10 0 0 $px-10;
+
+    h4 {
+      margin-bottom: $px-5;
+    }
+  }
+}
+
+.recap-report-container {
+  background-color: $white;
+  border-top: $px-2 solid $gray;
+
+  .recap-report-header {
+    border-bottom: 1px solid $lightgray;
+    color: $gray;
+    height: $px-40;
+    line-height: $px-40;
+    padding-left: $px-10;
+  }
+
+  .recap-report-details {
+    @include calc-vendor-prefix(width, '100% - 40px');
+    border-bottom: 1px solid $lightgray;
+    padding: $px-10 $px-20 $px-20;
+  }
+
+  .recap-report-chart {
+    float: left;
+    height: 206px;
+    width: $percentage-60;
+  }
+
+  .goals {
+    @include calc-vendor-prefix(width, '40% - 2em');
+    margin-left: 2em;
+
+    .goal {
+      margin-top: $px-10;
+
+      label {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        width: $percentage-100;
+
+        .score {
+          float: right;
+        }
+      }
+
+      progress {
+        height: $px-10;
+        width: $percentage-100;
+      }
+
+      progress[value]::-webkit-progress-bar {
+        border-radius: $px-2;
+      }
+    }
+  }
+
+  .totals-section {
+    background-color: $white;
+    overflow: hidden;
+
+    .total {
+      @include calc-vendor-prefix(width, '25% - 1px');
+      background-color: $white;
+      float: left;
+      line-height: $px-20;
+      margin: $px-30 0;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-right: $px-1 solid $gray;
+      }
+    }
+  }
+}
+
+.statistics {
+  margin-top: $px-20;
+
+  .visitors-report {
+    background-color: $white;
+    border-top: 2px solid $green;
+    width: $percentage-60;
+
+    .visitors-report-header {
+      border-bottom: 1px solid $lightgray;
+      color: $gray;
+      height: $px-40;
+      line-height: $px-40;
+      padding-left: $px-10;
+    }
+
+    .map {
+      height: 350px;
+      width: 75%;
+    }
+
+    .charts-section {
+      color: $white;
+      height: 350px;
+      width: 25%;
+    }
+
+    .chart {
+      @include calc-vendor-prefix(height, '33% - 10px');
+      padding-top: $px-10;
+      vertical-align: middle;
+    }
+
+    .bar-chart {
+      border-bottom: $px-1 solid $white;
+      display: inline-block;
+      height: $px-50;
+      margin-bottom: $px-10;
+      position: relative;
+      width: 56px;
+
+      .bar {
+        background-color: $white;
+        bottom: 0;
+        color: $white;
+        margin: 0 $px-2;
+        position: absolute;
+        width: $px-5;
+
+        &:first-child {
+          height: $px-20;
+          left: 0;
+        }
+
+        &:nth-child(2) {
+          height: $px-2;
+          left: $px-8;
+        }
+
+        &:nth-child(3) {
+          height: 12px;
+          left: 16px;
+        }
+
+        &:nth-child(4) {
+          height: $px-8;
+          left: 24px;
+        }
+
+        &:nth-child(5) {
+          height: 34px;
+          left: 32px;
+        }
+
+        &:nth-child(6) {
+          height: $px-6;
+          left: $px-40;
+        }
+
+        &:nth-child(7) {
+          height: $px-9;
+          left: 48px;
+        }
+      }
+    }
+  }
+}
+
+.analysis {
+  @include calc-vendor-prefix(width, '40% - 2em');
+  margin-left: 2em;
+
+  .data-section {
+    @include calc-vendor-prefix(height, '392px / 4 - 10px');
+    border-radius: $px-2;
+    width: $percentage-100;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  .analysis-icon {
+    @include calc-vendor-prefix(line-height, '392px / 4');
+    color: $white;
+    float: left;
+    height: $percentage-100;
+    text-align: center;
+    width: $percentage-30;
+
+    i {
+      font-size: 26px;
+    }
+  }
+
+  .details {
+    color: $white;
+    display: inline-block;
+    height: $percentage-100;
+    text-align: left;
+    width: $percentage-70;
+
+    progress {
+      height: $px-2;
+      width: $percentage-100;
+    }
+
+    progress[value]::-webkit-progress-bar {
+      background-color: $lightgray;
+      border-radius: $px-2;
+    }
+
+    .title,
+    .value,
+    .description {
+      padding-left: $px-10;
+    }
+
+    .title {
+      font-size: 14px;
+      padding-top: $px-6;
+    }
+
+    .value {
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 12px;
+    }
+  }
+}

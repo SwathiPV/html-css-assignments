@@ -1,0 +1,109 @@
+body {
+  font-family: 'robot-regular';
+}
+
+a {
+  color: $blue-accent-4;
+  text-decoration: none;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: $fontsize22;
+}
+
+h2 {
+  font-size: $fontsize20;
+}
+
+h3 {
+  font-size: $fontsize18;
+}
+
+h4 {
+  font-size: $fontsize16;
+}
+
+h5 {
+  font-size: $fontsize14;
+}
+
+h6 {
+  font-size: $fontsize12;
+}
+
+p,
+ul li,
+a,
+button,
+input,
+label,
+select,
+textarea,
+table tr td {
+  font-size: $fontsize16;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+.truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.circle {
+  border-radius: 50%;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.badge {
+  border-radius: 4px;
+  padding: 1px 8px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}

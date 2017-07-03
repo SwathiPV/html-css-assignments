@@ -1,0 +1,120 @@
+// // Fonts //
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Regular.woff2') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+  src: url('../fonts/roboto/Roboto-Medium.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Medium.woff2') format('woff');
+  font-weight: 400;
+}
+
+// #### Colors
+$white: #fff;
+$black: #000;
+$light-gray: #eee;
+$gray: #9e9e9e;
+$lightgray: #d3d3d3;
+$blue: #2196f3;
+$light-blue: #01bfef;
+$red: #de4b37;
+$dark-red: #b13b2d;
+$orange: #f39c11;
+$dark-orange: #c37d0e;
+$green: #00a65a;
+$dark-green: #008448;
+$skyblue: #00c0ef;
+$dark-skyblue: #009ac0;
+$indigo: #3f51b5;
+$brown-darken-4: #3e2723;
+$red-accent-1: #ff8a80;
+$blue-accent-4: #2962ff;
+$grey-lighten-2: #e0e0e0;
+$blue-grey-darken-3: #37474f;
+$blue-grey-darken-4: #263238;
+$blue-grey-darken-5: #1a2225;
+
+$search-icon-color: #b0bec5;
+$search-box-bg: #eceff1;
+$sidebar-bg: #2f3b4f;
+$logout-btn-bg: #2a3344;
+
+// #### !important
+$important: !important;
+
+// #### Pixels
+$px-1: 1px;
+$px-2: 2px;
+$px-3: 3px;
+$px-4: 4px;
+$px-5: 5px;
+$px-6: 6px;
+$px-7: 7px;
+$px-8: 8px;
+$px-9: 9px;
+
+
+$px-10: 10px;
+$px-20: 20px;
+$px-30: 30px;
+$px-40: 40px;
+$px-50: 50px;
+$px-60: 60px;
+$px-70: 70px;
+$px-80: 80px;
+$px-90: 90px;
+
+$px-100: 100px;
+$px-200: 200px;
+$px-300: 300px;
+$px-400: 400px;
+$px-500: 500px;
+$px-600: 600px;
+$px-700: 700px;
+$px-800: 800px;
+$px-900: 900px;
+$px-1000: 1000px;
+
+// #### Percentage
+
+$percentage-1: 1%;
+$percentage-2: 2%;
+$percentage-3: 3%;
+$percentage-4: 4%;
+$percentage-5: 5%;
+$percentage-6: 6%;
+$percentage-7: 7%;
+$percentage-8: 8%;
+$percentage-9: 9%;
+
+$percentage-10: 10%;
+$percentage-20: 20%;
+$percentage-30: 30%;
+$percentage-40: 40%;
+$percentage-50: 50%;
+$percentage-60: 60%;
+$percentage-70: 70%;
+$percentage-80: 80%;
+$percentage-90: 90%;
+$percentage-100: 100%;
+
+
+// ### Font size
+$fontsize36: 36px;
+$fontsize34: 34px;
+$fontsize32: 32px;
+$fontsize30: 30px;
+$fontsize28: 28px;
+$fontsize24: 24px;
+$fontsize22: 22px;
+$fontsize20: 20px;
+$fontsize18: 18px;
+$fontsize16: 16px;
+$fontsize14: 14px;
+$fontsize12: 12px;

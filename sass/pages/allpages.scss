@@ -1,0 +1,13 @@
+//scss-lint:disable IdSelector
+
+@import 'home/home';
+
+#app {
+  @import 'assignment-1/assignment-1';
+  @import 'assignment-1/responsive';
+}
+
+#app2 {
+  @import 'assignment-2/assignment-2';
+  @import 'assignment-2/responsive-2';
+}
