@@ -85,3 +85,25 @@
     }
   }
 }
+
+.menu-bar {
+  background-color: $blue-gray-darken-5;
+  color: $white;
+  height: 60px;
+  line-height: 60px;
+}
+
+.sidebar {
+  @include calc-vendor-prefix(height, '100vh - 130px');
+  background-color: $blue-gray-darken-4;
+  position: fixed;
+  text-align: center;
+  width: 90px;
+
+  .sidebar-menu-item a {
+    color: $white;
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
