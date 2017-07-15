@@ -1,0 +1,87 @@
+.header {
+  @include header($teal-accent-4);
+
+  .appbar {
+    line-height: 0;
+  }
+}
+
+.logo {
+  background-color: $blue-gray-darken-4;
+  padding: 5px;
+  width: 80px;
+}
+
+.user-info {
+  color: $white;
+  cursor: pointer;
+  float: right;
+  margin-right: 15px;
+  width: 120px;
+
+  .name-section {
+    line-height: 70px;
+  }
+
+  &:hover {
+    .name-section {
+      background-color: $teal-accent-5;
+    }
+
+    .dropdown {
+      display: block;
+    }
+  }
+
+  .sort-icon {
+    left: 8px;
+    position: relative;
+    top: -4px;
+  }
+
+  .dropdown {
+    background-color: $white-darken-1;
+    border: 1px solid $teal-accent-4;
+    display: none;
+    height: 70px;
+    line-height: 1;
+    position: relative;
+    right: 102px;
+    top: 5px;
+    width: 220px;
+
+    .circle {
+      float: left;
+      margin: 10px;
+    }
+
+    .user-details {
+      float: left;
+      margin-top: 15px;
+      text-align: left;
+      width: 150px;
+    }
+
+    div:first-child {
+      border-bottom: 10px solid $teal-accent-4;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      height: 0;
+      left: 192px;
+      position: absolute;
+      top: -10px;
+      width: 0;
+    }
+
+    div:nth-child(2) {
+      border-bottom: 10px solid $white-darken-1;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      height: 0;
+      left: 192px;
+      position: absolute;
+      top: -8px;
+      width: 0;
+    }
+  }
+}
