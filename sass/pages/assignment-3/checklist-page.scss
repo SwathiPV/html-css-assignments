@@ -1,21 +1,21 @@
 .checklist {
   background-color: $white;
-  border-radius: 20px;
+  border-radius: $px-20;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 10px;
-  width: 300px;
+  margin-top: $px-20;
+  padding: $px-10;
+  width: $px-300;
 }
 
 .list-item {
   color: $blue-gray-darken-4;
   cursor: pointer;
-  line-height: 40px;
-  padding: 5px;
+  line-height: $px-40;
+  padding: $px-5;
   text-align: left;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $light-gray;
+    border-bottom: $px-1 solid $light-gray;
   }
 
   &.active,
@@ -34,14 +34,14 @@
 .name {
   color: $blue-gray-darken-4;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 $px-10;
   text-overflow: ellipsis;
   width: 53%;
 }
 
 .fa-eye {
   float: right;
-  margin-top: 10px;
+  margin-top: $px-10;
 }
 
 .icon-list {
@@ -51,7 +51,7 @@
 
   .icon {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 $px-10;
 
     &:hover {
       background-color: $teal-accent-4;

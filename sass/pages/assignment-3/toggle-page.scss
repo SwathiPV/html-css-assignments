@@ -1,6 +1,6 @@
 .toggle-switch {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: $px-20;
   position: relative;
   width: 55px;
 }
@@ -10,7 +10,7 @@
 }
 
 .toggle-switch-label {
-  border-radius: 5px;
+  border-radius: $px-5;
   cursor: pointer;
   display: block;
   overflow: hidden;
@@ -18,7 +18,7 @@
 
 .toggle-switch-inner {
   display: block;
-  margin-left: -100%;
+  margin-left: -$percentage-100;
   width: 200%;
 }
 
@@ -30,33 +30,33 @@
   display: block;
   float: left;
   font-size: 14px;
-  height: 30px;
-  line-height: 30px;
+  height: $px-30;
+  line-height: $px-30;
   padding: 0;
-  width: 50%;
+  width: $percentage-50;
 
 }
 
 .toggle-switch-inner::before {
   color: $white;
   content: 'F';
-  padding-left: 10px;
+  padding-left: $px-10;
   text-align: left;
 }
 
 .toggle-switch-inner::after {
   color: $white;
   content: 'C';
-  padding-right: 10px;
+  padding-right: $px-10;
   text-align: right;
 }
 
 .toggle-switch-switch {
   background: $blue-gray-darken-4;
-  border-radius: 2px;
+  border-radius: $px-2;
   bottom: 0;
   display: block;
-  margin: 6px;
+  margin: $px-6;
   position: absolute;
   top: 0;
   width: 18px;
@@ -71,32 +71,32 @@
 }
 
 .button-hover-container {
-  margin-top: 20px;
+  margin-top: $px-20;
   position: relative;
 
   .buttons {
-    margin-top: 20px;
+    margin-top: $px-20;
   }
 
   .circle {
     cursor: pointer;
-    height: 30px;
-    margin-left: 50px;
-    width: 30px;
+    height: $px-30;
+    margin-left: $px-50;
+    width: $px-30;
     z-index: 1;
 
     .inner-circle {
       background-color: $blue-gray-darken-4;
-      border-radius: 50%;
+      border-radius: $percentage-50;
       display: none;
-      height: 50%;
-      margin: 7px;
-      width: 50%;
+      height: $percentage-50;
+      margin: $px-7;
+      width: $percentage-50;
     }
 
     &:last-child {
       background-color: $light-gray;
-      border: 1px dashed $blue-gray-darken-4;
+      border: $px-1 dashed $blue-gray-darken-4;
     }
 
     &:hover {
@@ -118,26 +118,26 @@
     content: '';
     display: inline-block;
     height: 0;
-    margin-left: -4px;
+    margin-left: -$px-4;
     margin-top: 15px;
     position: absolute;
     width: 54px;
     z-index: 0;
 
     &:nth-child(2) {
-      border-bottom: 2px solid $orange;
+      border-bottom: $px-2 solid $orange;
     }
 
     &:nth-child(4) {
-      border-bottom: 2px solid $skyblue;
+      border-bottom: $px-2 solid $skyblue;
     }
 
     &:nth-child(6) {
-      border-bottom: 2px solid $indigo;
+      border-bottom: $px-2 solid $indigo;
     }
 
     &:nth-child(8) {
-      border-bottom: 1px dashed $red;
+      border-bottom: $px-2 dashed $red;
       z-index: 0;
     }
   }

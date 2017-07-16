@@ -9,8 +9,8 @@
 
 .logo {
   background-color: $blue-gray-darken-4;
-  padding: 5px;
-  width: 80px;
+  padding: $px-5;
+  width: $px-80;
 }
 
 .user-info {
@@ -21,7 +21,7 @@
   width: 120px;
 
   .name-section {
-    line-height: 70px;
+    line-height: $px-70;
   }
 
   &:hover {
@@ -35,26 +35,26 @@
   }
 
   .sort-icon {
-    left: 8px;
+    left: $px-8;
     position: relative;
-    top: -4px;
+    top: -$px-4;
   }
 
   .dropdown {
     background-color: $white-darken-1;
-    border: 1px solid $teal-accent-4;
+    border: $px-1 solid $teal-accent-4;
     display: none;
-    height: 70px;
+    height: $px-70;
     line-height: 1;
     position: relative;
     right: 102px;
-    top: 5px;
+    top: $px-5;
     width: 220px;
     z-index: 2;
 
     .circle {
       float: left;
-      margin: 10px;
+      margin: $px-10;
     }
 
     .user-details {
@@ -65,24 +65,24 @@
     }
 
     div:first-child {
-      border-bottom: 10px solid $teal-accent-4;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
+      border-bottom: $px-10 solid $teal-accent-4;
+      border-left: $px-7 solid transparent;
+      border-right: $px-7 solid transparent;
       height: 0;
       left: 192px;
       position: absolute;
-      top: -10px;
+      top: -$px-10;
       width: 0;
     }
 
     div:nth-child(2) {
-      border-bottom: 10px solid $white-darken-1;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
+      border-bottom: $px-10 solid $white-darken-1;
+      border-left: $px-7 solid transparent;
+      border-right: $px-7 solid transparent;
       height: 0;
       left: 192px;
       position: absolute;
-      top: -8px;
+      top: -$px-8;
       width: 0;
     }
   }
@@ -91,20 +91,20 @@
 .menu-bar {
   background-color: $blue-gray-darken-5;
   color: $white;
-  height: 60px;
-  line-height: 60px;
+  height: $px-60;
+  line-height: $px-60;
   padding-left: 23px;
   position: fixed;
-  width: 100%;
+  width: $percentage-100;
 }
 
 .sidebar {
   @include calc-vendor-prefix(height, '100vh - 130px');
   background-color: $blue-gray-darken-4;
-  margin-top: 60px;
+  margin-top: $px-60;
   position: fixed;
   text-align: center;
-  width: 90px;
+  width: $px-90;
 }
 
 .sidebar-menu-item {
@@ -113,8 +113,8 @@
   a {
     color: $white;
     font-size: 24px;
-    height: 60px;
-    line-height: 60px;
+    height: $px-60;
+    line-height: $px-60;
   }
 
   &.active {
@@ -129,11 +129,11 @@
       content: '';
       display: inline-block;
       height: 14px;
-      line-height: 60px;
+      line-height: $px-60;
       position: absolute;
       right: 0;
       top: 34%;
-      width: 7px;
+      width: $px-7;
     }
   }
 }
@@ -143,7 +143,7 @@
 .toggle-container {
   @include calc-vendor-prefix(height, '100vh - 172px');
   background-color: $light-gray;
-  padding-left: 90px;
-  padding-top: 10%;
+  padding-left: $px-90;
+  padding-top: $percentage-10;
   text-align: center;
 }
