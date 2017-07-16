@@ -131,3 +131,34 @@
     }
   }
 }
+
+.progress-container {
+  background-color: $light-gray;
+  margin-left: 90px;
+
+  .circle {
+    background-color: transparent;
+    border: 1px solid $black;
+    color: $black;
+    font-size: 30px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    width: 70px;
+
+    &:not(:first-child) {
+      margin-left: -8px;
+    }
+  }
+
+  .line {
+    background-color: $black;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    left: -4px;
+    position: relative;
+    top: -8px;
+    width: 80px;
+  }
+}
