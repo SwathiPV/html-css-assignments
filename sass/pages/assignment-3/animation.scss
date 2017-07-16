@@ -1,0 +1,36 @@
+@include keyframes-vendor-prefix('changeradius') {
+  0% {
+    background-color: $orange;
+    border: 0;
+    transform: scale(1, 1);
+  }
+
+  50% {
+    background-color: $orange;
+    border: 0;
+    color: $white;
+    transform: scale(1.3, 1.3);
+  }
+
+  100% {
+    background-color: $orange;
+    border: 0;
+    color: $white;
+    transform: scale(1, 1);
+  }
+
+}
+
+@include keyframes-vendor-prefix('changelinecolor') {
+  0% {
+    background-color: $black;
+  }
+
+  50% {
+    background-color: $orange;
+  }
+
+  100% {
+    background-color: $orange;
+  }
+}

@@ -39,3 +39,22 @@ $vendor-prefixes: (-webkit-, -moz-, -o-, -ms-);
   }
   animation: $animation-value;
 }
+
+@mixin keyframes-vendor-prefix($animation-name) {
+  //scss-lint:disable VendorPrefix
+  @-webkit-keyframes #{$animation-name} {
+    @content
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content
+  }
+}

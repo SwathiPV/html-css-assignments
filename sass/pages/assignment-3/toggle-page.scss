@@ -103,6 +103,7 @@
       transform: scale(2);
       transition: all .5s ease-in-out;
 
+      //scss-lint:disable NestingDepth
       .inner-circle {
         display: block;
         transition: all .5s ease-in-out;
