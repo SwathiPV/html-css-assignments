@@ -1,0 +1,61 @@
+.checklist {
+  background-color: $white;
+  border-radius: $px-20;
+  margin: 0 auto;
+  margin-top: $px-20;
+  padding: $px-10;
+  width: $px-300;
+}
+
+.list-item {
+  color: $blue-gray-darken-4;
+  cursor: pointer;
+  line-height: $px-40;
+  padding: $px-5;
+  text-align: left;
+
+  &:not(:last-child) {
+    border-bottom: $px-1 solid $light-gray;
+  }
+
+  &.active,
+  &.active .name {
+    color: $orange;
+  }
+
+  &:hover {
+    .name {
+      background-color: $teal-accent-4;
+      color: $white;
+    }
+  }
+}
+
+.name {
+  color: $blue-gray-darken-4;
+  display: inline-block;
+  padding: 0 $px-10;
+  text-overflow: ellipsis;
+  width: 53%;
+}
+
+.fa-eye {
+  float: right;
+  margin-top: $px-10;
+}
+
+.icon-list {
+  display: inline-block;
+  float: right;
+  width: 40%;
+
+  .icon {
+    display: inline-block;
+    padding: 0 $px-10;
+
+    &:hover {
+      background-color: $teal-accent-4;
+      color: $white;
+    }
+  }
+}

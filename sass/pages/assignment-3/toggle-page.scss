@@ -1,0 +1,144 @@
+.toggle-switch {
+  margin: 0 auto;
+  margin-top: $px-20;
+  position: relative;
+  width: 55px;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  border-radius: $px-5;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+
+.toggle-switch-inner {
+  display: block;
+  margin-left: -$percentage-100;
+  width: 200%;
+}
+
+.toggle-switch-inner::before,
+.toggle-switch-inner::after {
+  background-color: $teal-accent-4;
+  box-sizing: border-box;
+  color: $white;
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: $px-30;
+  line-height: $px-30;
+  padding: 0;
+  width: $percentage-50;
+
+}
+
+.toggle-switch-inner::before {
+  color: $white;
+  content: 'F';
+  padding-left: $px-10;
+  text-align: left;
+}
+
+.toggle-switch-inner::after {
+  color: $white;
+  content: 'C';
+  padding-right: $px-10;
+  text-align: right;
+}
+
+.toggle-switch-switch {
+  background: $blue-gray-darken-4;
+  border-radius: $px-2;
+  bottom: 0;
+  display: block;
+  margin: $px-6;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 0;
+}
+
+.button-hover-container {
+  margin-top: $px-20;
+  position: relative;
+
+  .buttons {
+    margin-top: $px-20;
+  }
+
+  .circle {
+    cursor: pointer;
+    height: $px-30;
+    margin-left: $px-50;
+    width: $px-30;
+    z-index: 1;
+
+    .inner-circle {
+      background-color: $blue-gray-darken-4;
+      border-radius: $percentage-50;
+      display: none;
+      height: $percentage-50;
+      margin: $px-7;
+      width: $percentage-50;
+    }
+
+    &:last-child {
+      background-color: $light-gray;
+      border: $px-1 dashed $blue-gray-darken-4;
+    }
+
+    &:hover {
+      transform: scale(2);
+      transition: all .5s ease-in-out;
+
+      //scss-lint:disable NestingDepth
+      .inner-circle {
+        display: block;
+        transition: all .5s ease-in-out;
+      }
+    }
+
+
+  }
+
+  .line {
+    // background-color: $black;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin-left: -$px-4;
+    margin-top: 15px;
+    position: absolute;
+    width: 54px;
+    z-index: 0;
+
+    &:nth-child(2) {
+      border-bottom: $px-2 solid $orange;
+    }
+
+    &:nth-child(4) {
+      border-bottom: $px-2 solid $skyblue;
+    }
+
+    &:nth-child(6) {
+      border-bottom: $px-2 solid $indigo;
+    }
+
+    &:nth-child(8) {
+      border-bottom: $px-2 dashed $red;
+      z-index: 0;
+    }
+  }
+}

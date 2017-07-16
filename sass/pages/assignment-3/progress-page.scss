@@ -1,0 +1,50 @@
+.progress-container {
+  .animation-container {
+    margin-top: 40px;
+  }
+
+  .circle {
+    @include animation-vendor-prefix(changeradius 1s ease normal forwards);
+    background-color: transparent;
+    border: $px-1 solid $black;
+    font-size: $px-30;
+    height: $px-70;
+    line-height: $px-70;
+    position: relative;
+    width: $px-70;
+    z-index: 1;
+
+    &:not(:first-child) {
+      margin-left: -$px-8;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 4s;
+    }
+  }
+
+  .line {
+    @include animation-vendor-prefix(changelinecolor 1s ease normal forwards);
+    background-color: $black;
+    content: '';
+    display: inline-block;
+    height: $px-2;
+    left: -$px-4;
+    position: relative;
+    top: -$px-8;
+    width: $px-80;
+    z-index: 0;
+
+    &:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 3s;
+    }
+  }
+}

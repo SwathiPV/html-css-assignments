@@ -77,9 +77,12 @@ input {
 }
 
 .circle {
+  background-color: $black;
   border-radius: 50%;
-  display: block;
+  display: inline-block;
   height: 50px;
+  line-height: 50px;
+  text-align: center;
   width: 50px;
 }
 

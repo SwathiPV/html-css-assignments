@@ -32,3 +32,29 @@ $vendor-prefixes: (-webkit-, -moz-, -o-, -ms-);
   }
   #{$property-name}: calc(#{$property-value});
 }
+
+@mixin animation-vendor-prefix($animation-value) {
+  @each $prefix in $vendor-prefixes {
+    #{$prefix}animation: #{$animation-value};
+  }
+  animation: $animation-value;
+}
+
+@mixin keyframes-vendor-prefix($animation-name) {
+  //scss-lint:disable VendorPrefix
+  @-webkit-keyframes #{$animation-name} {
+    @content
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content
+  }
+}
