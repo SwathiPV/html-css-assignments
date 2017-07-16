@@ -32,3 +32,10 @@ $vendor-prefixes: (-webkit-, -moz-, -o-, -ms-);
   }
   #{$property-name}: calc(#{$property-value});
 }
+
+@mixin animation-vendor-prefix($animation-value) {
+  @each $prefix in $vendor-prefixes {
+    #{$prefix}animation: #{$animation-value};
+  }
+  animation: $animation-value;
+}
