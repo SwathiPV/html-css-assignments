@@ -1,0 +1,74 @@
+.toggle-container {
+  @include calc-vendor-prefix(height, '100vh - 130px');
+  background-color: $light-gray;
+  margin-left: 90px;
+
+  .toggle-switch {
+    position: relative;
+    width: 55px;
+  }
+
+  .toggle-switch-checkbox {
+    display: none;
+  }
+
+  .toggle-switch-label {
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+  }
+
+  .toggle-switch-inner {
+    display: block;
+    margin-left: -100%;
+    width: 200%;
+  }
+
+  .toggle-switch-inner::before,
+  .toggle-switch-inner::after {
+    background-color: $teal-accent-4;
+    box-sizing: border-box;
+    color: $white;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    width: 50%;
+
+  }
+
+  .toggle-switch-inner::before {
+    color: $white;
+    content: 'F';
+    padding-left: 10px;
+  }
+
+  .toggle-switch-inner::after {
+    color: $white;
+    content: 'C';
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .toggle-switch-switch {
+    background: $blue-gray-darken-4;
+    border-radius: 2px;
+    bottom: 0;
+    display: block;
+    margin: 6px;
+    position: absolute;
+    top: 0;
+    width: 18px;
+  }
+
+  .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+    margin-left: 0;
+  }
+
+  .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+    right: 0;
+  }
+}
