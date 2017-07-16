@@ -1,7 +1,7 @@
 .progress-container {
-  @include calc-vendor-prefix(height, '100vh - 130px');
-  background-color: $light-gray;
-  margin-left: 90px;
+  .animation-container {
+    margin-top: 40px;
+  }
 
   .circle {
     @include animation-vendor-prefix(changeradius 1s ease normal forwards);

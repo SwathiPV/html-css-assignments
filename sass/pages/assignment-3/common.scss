@@ -40,6 +40,7 @@
 
   .appbar {
     line-height: 0;
+    box-shadow: none;
   }
 }
 
@@ -86,6 +87,7 @@
     right: 102px;
     top: 5px;
     width: 220px;
+    z-index: 2;
 
     .circle {
       float: left;
@@ -128,11 +130,15 @@
   color: $white;
   height: 60px;
   line-height: 60px;
+  padding-left: 23px;
+  position: fixed;
+  width: 100%;
 }
 
 .sidebar {
   @include calc-vendor-prefix(height, '100vh - 130px');
   background-color: $blue-gray-darken-4;
+  margin-top: 60px;
   position: fixed;
   text-align: center;
   width: 90px;
@@ -167,4 +173,14 @@
       width: 7px;
     }
   }
+}
+
+.checklist-container,
+.progress-container,
+.toggle-container {
+  @include calc-vendor-prefix(height, '100vh - 172px');
+  background-color: $light-gray;
+  padding-left: 90px;
+  padding-top: 10%;
+  text-align: center;
 }
