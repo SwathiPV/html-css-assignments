@@ -1,0 +1,62 @@
+.checklist-container {
+  @include calc-vendor-prefix(height, '100vh - 130px');
+  background-color: $light-gray;
+  margin-left: 90px;
+}
+
+.checklist {
+  background-color: $white;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+}
+
+.list-item {
+  border-bottom: 1px solid $light-gray;
+  color: $blue-gray-darken-4;
+  cursor: pointer;
+  line-height: 40px;
+  padding: 5px;
+
+  &.active,
+  &.active .name {
+    color: $orange;
+  }
+
+  &:hover {
+    .name {
+      background-color: $teal-accent-4;
+      color: $white;
+    }
+  }
+}
+
+.name {
+  color: $blue-gray-darken-4;
+  display: inline-block;
+  padding: 0 10px;
+  text-overflow: ellipsis;
+  width: 53%;
+}
+
+.fa-eye {
+  float: right;
+  margin-top: 10px;
+}
+
+.icon-list {
+  display: inline-block;
+  float: right;
+  width: 40%;
+
+  .icon {
+    display: inline-block;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: $teal-accent-4;
+      color: $white;
+    }
+  }
+}
